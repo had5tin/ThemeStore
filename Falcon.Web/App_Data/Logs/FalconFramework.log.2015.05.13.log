@@ -1,0 +1,269 @@
+﻿2015-05-13 04:37:02,608 [1    ] INFO  Start Application
+ 2015-05-13 04:37:02,807 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 04:37:04,624 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0585127
+ 2015-05-13 04:37:04,692 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 04:37:05,926 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:01.2339730
+ 2015-05-13 04:37:06,534 [1    ] INFO  Register Routes cost 00:00:00.0718841
+ 2015-05-13 04:37:06,715 [1    ] INFO  Start Application Completed, cost 00:00:04.0432535
+ 2015-05-13 04:45:50,158 [1    ] INFO  Start Application
+ 2015-05-13 04:45:50,218 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 04:45:51,580 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0420496
+ 2015-05-13 04:45:51,650 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 04:45:51,881 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2303470
+ 2015-05-13 04:45:51,982 [1    ] INFO  Register Routes cost 00:00:00.0425063
+ 2015-05-13 04:45:52,001 [1    ] INFO  Start Application Completed, cost 00:00:01.8050386
+ 2015-05-13 05:00:58,501 [25   ] INFO  Start Application
+ 2015-05-13 05:00:58,549 [25   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 05:01:00,105 [25   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0442762
+ 2015-05-13 05:01:00,137 [25   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 05:01:00,310 [25   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.1726076
+ 2015-05-13 05:01:00,375 [25   ] INFO  Register Routes cost 00:00:00.0183900
+ 2015-05-13 05:01:00,386 [25   ] INFO  Start Application Completed, cost 00:00:01.8495935
+ 2015-05-13 08:07:54,817 [1    ] INFO  Start Application
+ 2015-05-13 08:07:55,060 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 08:07:57,626 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0447456
+ 2015-05-13 08:07:57,713 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 08:07:59,475 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:01.7623025
+ 2015-05-13 08:07:59,816 [1    ] INFO  Register Routes cost 00:00:00.0601216
+ 2015-05-13 08:07:59,974 [1    ] INFO  Start Application Completed, cost 00:00:05.0684233
+ 2015-05-13 08:51:46,984 [1    ] INFO  Start Application
+ 2015-05-13 08:51:47,330 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 08:51:50,918 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0439312
+ 2015-05-13 08:51:51,024 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 08:51:51,572 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.5484772
+ 2015-05-13 08:51:51,803 [1    ] INFO  Register Routes cost 00:00:00.0783984
+ 2015-05-13 08:51:51,867 [1    ] INFO  Start Application Completed, cost 00:00:04.8100520
+ 2015-05-13 10:14:47,946 [51   ] INFO  Start Application
+ 2015-05-13 10:14:48,423 [51   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 10:14:52,088 [51   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0743394
+ 2015-05-13 10:14:52,211 [51   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 10:14:53,426 [51   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:01.2149280
+ 2015-05-13 10:14:53,861 [51   ] INFO  Register Routes cost 00:00:00.0666381
+ 2015-05-13 10:14:54,067 [51   ] INFO  Start Application Completed, cost 00:00:06.0667166
+ 2015-05-13 10:45:29,285 [57   ] INFO  Start Application
+ 2015-05-13 10:45:29,336 [57   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 10:45:30,726 [57   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0573285
+ 2015-05-13 10:45:30,752 [57   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 10:45:30,971 [57   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2183230
+ 2015-05-13 10:45:31,041 [57   ] INFO  Register Routes cost 00:00:00.0190891
+ 2015-05-13 10:45:31,058 [57   ] INFO  Start Application Completed, cost 00:00:01.7327327
+ 2015-05-13 11:35:24,727 [57   ] INFO  Start Application
+ 2015-05-13 11:35:24,790 [57   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 11:35:26,376 [57   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0465980
+ 2015-05-13 11:35:26,413 [57   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 11:35:26,775 [57   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3623994
+ 2015-05-13 11:35:26,861 [57   ] INFO  Register Routes cost 00:00:00.0239856
+ 2015-05-13 11:35:26,877 [57   ] INFO  Start Application Completed, cost 00:00:02.1094876
+ 2015-05-13 11:57:19,628 [37   ] INFO  Start Application
+ 2015-05-13 11:57:19,683 [37   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 11:57:21,024 [37   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0556402
+ 2015-05-13 11:57:21,080 [37   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 11:57:21,283 [37   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2023461
+ 2015-05-13 11:57:21,361 [37   ] INFO  Register Routes cost 00:00:00.0199220
+ 2015-05-13 11:57:21,374 [37   ] INFO  Start Application Completed, cost 00:00:01.7074611
+ 2015-05-13 12:03:38,381 [57   ] INFO  Start Application
+ 2015-05-13 12:03:38,421 [57   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 12:03:39,782 [57   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0553672
+ 2015-05-13 12:03:39,812 [57   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 12:03:40,053 [57   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2415481
+ 2015-05-13 12:03:40,121 [57   ] INFO  Register Routes cost 00:00:00.0207373
+ 2015-05-13 12:03:40,153 [57   ] INFO  Start Application Completed, cost 00:00:01.7436443
+ 2015-05-13 13:41:06,829 [1    ] INFO  Start Application
+ 2015-05-13 13:41:06,948 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 13:41:08,342 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0396382
+ 2015-05-13 13:41:08,410 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 13:41:09,063 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.6535040
+ 2015-05-13 13:41:09,318 [1    ] INFO  Register Routes cost 00:00:00.0432497
+ 2015-05-13 13:41:09,338 [1    ] INFO  Start Application Completed, cost 00:00:02.4511686
+ 2015-05-13 14:33:22,275 [1    ] INFO  Start Application
+ 2015-05-13 14:33:22,507 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 14:33:24,816 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0430958
+ 2015-05-13 14:33:24,902 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 14:33:25,532 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.6300330
+ 2015-05-13 14:33:29,730 [1    ] INFO  Register Routes cost 00:00:03.5443556
+ 2015-05-13 14:33:29,746 [1    ] INFO  Start Application Completed, cost 00:00:07.4087127
+ 2015-05-13 14:33:30,317 [6    ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:34:54,068 [1    ] INFO  Start Application
+ 2015-05-13 14:34:54,147 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 14:34:56,068 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0547176
+ 2015-05-13 14:34:56,162 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 14:34:56,520 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3575137
+ 2015-05-13 14:34:58,277 [1    ] INFO  Register Routes cost 00:00:01.6343748
+ 2015-05-13 14:34:58,296 [1    ] INFO  Start Application Completed, cost 00:00:04.1783055
+ 2015-05-13 14:34:58,542 [13   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:35:15,665 [8    ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:35:38,849 [6    ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:35:44,670 [13   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:38:35,455 [1    ] INFO  Start Application
+ 2015-05-13 14:38:35,514 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 14:38:36,968 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0394904
+ 2015-05-13 14:38:37,119 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 14:38:37,356 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2371817
+ 2015-05-13 14:38:38,047 [1    ] INFO  Register Routes cost 00:00:00.6334198
+ 2015-05-13 14:38:38,064 [1    ] INFO  Start Application Completed, cost 00:00:02.5716254
+ 2015-05-13 14:38:38,282 [13   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:39:37,575 [10   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 14:44:16,188 [1    ] INFO  Start Application
+ 2015-05-13 14:44:16,267 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 14:44:17,762 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0424400
+ 2015-05-13 14:44:17,832 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 14:44:18,067 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2349187
+ 2015-05-13 14:44:18,857 [1    ] INFO  Register Routes cost 00:00:00.7283130
+ 2015-05-13 14:44:18,874 [1    ] INFO  Start Application Completed, cost 00:00:02.6286373
+ 2015-05-13 14:44:38,125 [8    ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Services.ThemeStores.IThemeStoreService' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-13 15:00:13,374 [31   ] INFO  Start Application
+ 2015-05-13 15:00:13,873 [31   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 15:00:15,532 [31   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0424431
+ 2015-05-13 15:00:15,631 [31   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 15:00:15,914 [31   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2829203
+ 2015-05-13 15:00:17,034 [31   ] INFO  Register Routes cost 00:00:01.0056441
+ 2015-05-13 15:00:17,067 [31   ] INFO  Start Application Completed, cost 00:00:03.2169441
+ 2015-05-13 15:55:53,454 [1    ] INFO  Start Application
+ 2015-05-13 15:55:53,688 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 15:55:57,178 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0504508
+ 2015-05-13 15:55:57,250 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 15:55:57,965 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.7154945
+ 2015-05-13 15:55:58,437 [1    ] INFO  Register Routes cost 00:00:00.1049960
+ 2015-05-13 15:55:58,571 [1    ] INFO  Start Application Completed, cost 00:00:05.0553647
+ 2015-05-13 16:37:35,627 [1    ] INFO  Start Application
+ 2015-05-13 16:37:35,680 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 16:37:39,076 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0467515
+ 2015-05-13 16:37:39,135 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 16:37:39,756 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.6209031
+ 2015-05-13 16:37:40,023 [1    ] INFO  Register Routes cost 00:00:00.0340053
+ 2015-05-13 16:37:40,043 [1    ] INFO  Start Application Completed, cost 00:00:04.3886706
+ 2015-05-13 16:42:50,054 [16   ] INFO  Start Application
+ 2015-05-13 16:42:50,192 [16   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 16:42:51,637 [16   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0405660
+ 2015-05-13 16:42:51,708 [16   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 16:42:51,949 [16   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2403905
+ 2015-05-13 16:42:56,683 [16   ] INFO  Register Routes cost 00:00:04.6318229
+ 2015-05-13 16:42:56,699 [16   ] INFO  Start Application Completed, cost 00:00:06.5339715
+ 2015-05-13 17:22:36,927 [1    ] INFO  Start Application
+ 2015-05-13 17:22:37,051 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-13 17:22:39,804 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0449754
+ 2015-05-13 17:22:39,889 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-13 17:22:40,664 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.7756505
+ 2015-05-13 17:22:40,993 [1    ] INFO  Register Routes cost 00:00:00.0581547
+ 2015-05-13 17:22:41,014 [1    ] INFO  Start Application Completed, cost 00:00:04.0429526
+ 

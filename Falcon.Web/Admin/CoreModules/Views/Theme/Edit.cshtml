@@ -1,0 +1,20 @@
+﻿@model Falcon.Admin.CoreModules.Models.RoleModel
+
+@using (Html.BeginForm())
+{
+    @Html.Partial("_Toolbar")
+                           
+    @Html.ValidationSummary(true)
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-edit-form fieldset-legend">Chỉnh sửa vai trò @Model.Name</h4>
+            <div class="form-buttons"></div>
+        </div>
+        <div class="fieldset " id="user_base_fieldset">
+            <div class="hor-scroll">
+                @Html.HiddenFor(model => model.Id)
+                @Html.Partial("_CreateOrEdit", Model)
+            </div>
+        </div>
+    </div>
+}

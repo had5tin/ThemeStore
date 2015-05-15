@@ -1,0 +1,160 @@
+﻿@using Falcon.Mvc
+@{
+    string menuEffect = "onmouseout=$(this).removeClass('over') onmouseover=$(this).addClass('over')";
+    string area = MvcHelpers.GetAreaName(ViewContext.RouteData);
+    string currentMenu = "dashboard";
+    switch (area)
+    {
+        case "Users":
+        case "Authorizations":
+        case "Themes":
+        case "SystemSettings":
+            currentMenu = "system";
+            break;
+        case "Pages":
+            currentMenu = "content";
+            break;
+    }
+}
+<nav>
+    <h5 class="sidebar-header">Navigation</h5>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="nav" id="li-dashboard">
+            @*<a href="#" title="Trang chủ">
+                    <i class="fa fa-lg fa-fw fa-home"></i>
+                    @Html.ActionLinkSpan("Trang chủ", "Index", new { area = "CoreModules", controller = "dashboard" })
+                </a>*@
+            @*@Html.ActionLinkSpan("Trang chủ", "Index", new { area = "CoreModules", controller = "dashboard" })*@
+            <a href="@Url.Action("Index", "Dashboard", new { area = "CoreModules" }, null)" title="Trang chủ">
+                <i class="glyphicon glyphicon-home"></i> Trang chủ
+            </a>
+        </li>
+        <li class="nav-dropdown" id="li-noidung">
+            <a href="#" title="Nội dung">
+                <i class="glyphicon glyphicon-list-alt"></i> Nội dung
+                @*<span class="label label-warning pull-right">Updated</span>*@
+            </a>
+            <ul class="nav-sub">
+                <li id="li-noidung-pages">
+                    @*<a href="forms-form-layouts.html" title="Form Layouts">
+                            <i class="fa fa-fw fa-caret-right"></i> Trang tĩnh
+                        </a>*@
+                    @Html.ActionLinkSpan("Trang tĩnh", "index", new { area = "Contents", controller = "pages" })
+                </li>
+                <li id="li-noidung-feature">
+                    @Html.ActionLinkSpan("Tính năng", "index", new { area = "Contents", controller = "Feature" })
+                </li>
+                <li id="li-noidung-collection">
+                    @Html.ActionLinkSpan("Ngành nghề", "index", new { area = "Contents", controller = "Collection" })
+                </li>
+                <li id="li-noidung-themeU">
+                    @Html.ActionLinkSpan("Theme", "index", new { area = "Contents", controller = "ThemeStore" })
+                </li>
+            </ul>
+        </li>
+        <li class="nav-dropdown" id="li-hethong">
+            <a href="#" title="Hệ thống">
+                <i class="glyphicon glyphicon-wrench"></i> Hệ thống
+            </a>
+            <ul class="nav-sub">
+                <li id="li-hethong-systemsetting">
+                    @*<a href="tables-basic-tables.html" title="Basic Tables">
+                            <i class="fa fa-fw fa-caret-right"></i> Thiết lập hệ thống
+                        </a>*@
+                    @Html.ActionLinkSpan("Thiết lập hệ thống", "Index", new { area = "CoreModules", controller = "systemsetting" })
+                </li>
+                <li id="li-hethong-theme">
+                    @Html.ActionLinkSpan("Giao diện", "Index", new { area = "CoreModules", controller = "theme" })
+                </li>
+                <li id="li-hethong-elmahlog">
+                    @Html.ActionLinkSpan("Log lỗi hệ thống", "Index", new { area = "CoreModules", controller = "elmahlog" }, new { target = "_blank" })
+                </li>
+                <li class="nav-dropdown" id="li-hethong-phanquyen">
+                    <a title="Phân quyền" href="#">
+                        <i class="fa fa-fw fa-folder-open"></i>
+                        Phân quyền
+                    </a>
+                    <ul class="nav-sub" data-index="10" style="display: none;">
+                        <li id="li-hethong-user">
+                            @*<a title="Level 3.1" href="javascript:;">
+                                    <i class="fa fa-fw fa-file"></i>
+                                    Level 3.1
+                                </a>*@
+                            @Html.ActionLinkSpan("Tài khoản hệ thống", "Index", new { area = "CoreModules", controller = "user" })
+                        </li>
+                        <li id="li-hethong-roles">
+                            @Html.ActionLinkSpan("Vai trò", "Index", new { area = "CoreModules", controller = "authorization" })
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        @*<li class="disabled">
+                <a href="javascript:;" title="Disabled">
+                    <i class="fa fa-lg fa-fw fa-th"></i> Disabled
+                </a>
+            </li>*@
+    </ul>
+    <h5 class="sidebar-header">Labels</h5>
+    <ul class="nav nav-pills nav-stacked">
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-fw fa-circle text-danger"></i>
+                Important Tasks
+            </a>
+        </li>
+    </ul>
+    <h5 class="sidebar-header">Summary</h5>
+    <ul class="sidebar-summary">
+        <li>
+            <div class="mini-chart mini-chart-block">
+                <div class="chart-details">
+                    <div class="chart-name">Total Sales</div>
+                    <div class="chart-value">$261,885</div>
+                </div>
+                <div id="mini-chart-sidebar-1" class="chart pull-right"></div>
+            </div>
+        </li>
+    </ul>
+</nav>
+@*<ul id="nav">
+        <li id="nav-li-dashboard" class="level0">
+            @Html.ActionLinkSpan("Trang chủ", "Index", new { area = "CoreModules", controller = "dashboard" })
+        </li>
+        <li id="nav-li-content" class="level0" @menuEffect>
+            <a href="#" onclick="return false;"><span>Nội dung</span></a>
+            <ul>
+                <li class="level1">
+                    @Html.ActionLinkSpan("Trang tĩnh", "index", new { area = "Contents", controller = "pages" })
+                </li>
+            </ul>
+        </li>
+        <li id="nav-li-system" class="level0" @menuEffect>
+            <a href="#" onclick="return false;"><span>Hệ thống</span></a>
+            <ul>
+                <li class="level1">
+                    @Html.ActionLinkSpan("Thiết lập hệ thống", "Index", new { area = "CoreModules", controller = "systemsetting" })
+                </li>
+                <li class="level1">
+                    @Html.ActionLinkSpan("Giao diện", "Index", new { area = "CoreModules", controller = "theme" })
+                </li>
+                <li class="level1">
+                    @Html.ActionLinkSpan("Log lỗi hệ thống", "Index", new { area = "CoreModules", controller = "elmahlog" }, new { target = "_blank" })
+                </li>
+                <li class="parent level1" @menuEffect>
+                    <a href="#" onclick="return false;"><span>Phân quyền</span></a>
+                    <ul>
+                        <li class="level2">@Html.ActionLinkSpan("Tài khoản hệ thống", "Index", new { area = "CoreModules", controller = "user" })</li>
+                        <li class="level2">@Html.ActionLinkSpan("Vai trò", "Index", new { area = "CoreModules", controller = "authorization" })</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var currentMenu = "@currentMenu";
+            $("#nav-li-" + currentMenu).addClass("active");
+        });
+    </script>*@

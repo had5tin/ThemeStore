@@ -1,0 +1,22 @@
+﻿@model CreateUserModel
+<div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-edit-form fieldset-legend">Phân quyền tài khoản quản trị</h4>
+            <div class="form-buttons"></div>
+        </div>
+        <div class="fieldset " id="user_base_fieldset">
+            <div class="hor-scroll">
+                <table cellspacing="0" class="form-list">
+                    <tr>
+                        <td class="label">@Html.LabelRequiredFor(model => model.Roles)</td>
+                        <td class="value">                            
+                            @foreach (var item in Model.Roles) { 
+                                @Html.CheckBox("role_" + item.Value, item.Selected)<label for="role_@(item.Value)">@item.Text</label><br/>
+                            }
+                            @Html.ValidationMessageFor(model => model.Roles)
+                        </td>
+                    </tr>    
+                </table>
+            </div>
+        </div>
+    </div>

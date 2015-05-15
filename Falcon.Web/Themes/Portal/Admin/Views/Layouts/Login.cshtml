@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @SetMeta(new Falcon.UI.Resources.MetaEntry { HttpEquiv = "Content-Type", Content = "text/html; charset=utf-8" })
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    
+    @Css("login.css?v=1.0")
+    
+    <link href="~/Content/Center.css" rel="stylesheet" />
+    @*@Css("boxes.css?v=1.0")*@
+
+    @*@Css("reset.css?v=1.0")
+    @Css("boxes.css?v=1.0")*@
+
+    @*<link rel="icon" href="http://magento.vn:8888/skin/adminhtml/default/default/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="http://magento.vn:8888/skin/adminhtml/default/default/favicon.ico" type="image/x-icon" />*@
+    @*@Js("jquery.js?v=1.0")*@
+
+    <!--[if IE]> @Css("iestyles.css?v=1.0") <![endif]-->
+    <!--[if lt IE 7]> @Css("below_ie7.css?v=1.0")<![endif]-->
+    <!--[if IE 7]> @Css("ie7")<![endif]-->
+    @Js("jquery-2.1.3.min.js?v=1.0")
+    @Js("jquery.validate.min.js?v=1.0")
+    @Js("jquery.validate.unobtrusive.min.js?v=1.0")
+    @Js("jquery-ui-1.11.2.min.js?v=1.0")
+    @Js("bootstrap.min.js?v=1.0")
+
+    @RenderSection("scripts", required: false)
+</head>
+<body id="page-login">
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

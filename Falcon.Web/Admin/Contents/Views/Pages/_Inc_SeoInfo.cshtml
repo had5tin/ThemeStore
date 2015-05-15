@@ -1,0 +1,29 @@
+﻿@model StaticPageModel
+
+<div class="entry-edit">
+    <div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Thông tin SEO</h4>
+    <div class="form-buttons"></div>
+</div>
+    <div id="base_fieldset" class="fieldset ">
+    <div class="hor-scroll">           
+<table cellspacing="0" class="form-list">
+    <tr>
+        <td class="label">@Html.LabelFor(model => model.MetaDescription)</td>
+        <td class="value">                            
+            @Html.TextAreaFor(model => model.MetaDescription, new { @class = "textarea", rows = "2", cols = "15", style = "width:600px" })
+                            
+            @Html.ValidationMessageFor(model => model.MetaDescription)
+        </td>
+    </tr>
+    <tr>
+        <td class="label">@Html.LabelFor(model => model.MetaKeyword)</td>
+        <td class="value">
+            @Html.TextAreaFor(model => model.MetaKeyword, new { @class = "textarea", rows = "2", cols = "15", style = "width:600px" })
+            @Html.ValidationMessageFor(model => model.MetaKeyword)
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+</div>

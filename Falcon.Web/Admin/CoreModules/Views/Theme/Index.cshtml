@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ThemeModel>
+           
+@using (Html.BeginForm()){
+    
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.Partial("_Toolbar")
+            </div>
+            <div class="panel-body">
+                <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Giao diện</th>
+                            <th>Ảnh đại diện</th>
+                            @*<th style="width: 105px">Thao tác</th>*@
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.ActionLink(item.ThemeType, "Edit/" + item.ThemeType)
+                                </td>
+                                <td>
+                                    <img src="@Url.Content(item.VirtualPath + "/Theme.png")" alt="Ảnh đại diện" title="Ảnh đại diện" style="max-height:150px;border:solid 1px gray" />
+                                </td>
+                                @*<td>
+                                    <div class="text-center">
+                                        <a class="btn btn-default btn-xs" href="@Url.Action("Edit", new { key = item.SettingKey })" title="Sửa"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                                        <a class="btn btn-danger btn-xs" href="@Url.Action("Delete", new { key = item.SettingKey })" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" title="Xóa"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;
+                                    </div>
+                                </td>*@
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+}

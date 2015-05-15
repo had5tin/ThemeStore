@@ -1,0 +1,73 @@
+﻿@model StaticPageModel
+           
+@{
+    Func<StaticPageModel,string> content = staticPage => staticPage == null ? "" : staticPage.Content;
+}
+<div class="entry-edit">
+    <div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Thông tin trang</h4>
+    <div class="form-buttons"></div>
+</div>
+    <div id="base_fieldset" class="fieldset ">
+    <div class="hor-scroll">           
+<table cellspacing="0" class="form-list">
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Title)</td>
+        <td class="value">                            
+            @Html.TextBoxFor(model => model.Title, new { @class = "input-text" })
+                            
+            @Html.ValidationMessageFor(model => model.Title)
+        </td>
+    </tr>
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.SeoUrl)</td>
+        <td class="value">
+            @Html.TextBoxFor(model => model.SeoUrl, new { @class = "input-text" })
+            @Html.ValidationMessageFor(model => model.SeoUrl)
+        </td>
+    </tr>                    
+    <tr>
+        <td class="contentEditor" colspan="2" style="min-height:400px"> 
+            @Html.TextAreaFor(model => model.Content, new { id = "Content", style = "width:670px;height:400px" })
+            @Html.ValidationMessageFor(model => model.Content)
+        </td>
+    </tr>    
+</table>
+</div>
+        </div>
+</div>
+<style type="text/css">
+.editor-output
+{
+    /*font: normal 1em/1.1em "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;*/
+    border: 1px solid #ccc;
+    background: #fff;
+    display: block;
+    padding: 4px 8px 8px;
+}
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Content').tinymce({
+            script_url: '@Url.Content("~/Scripts/tiny_mce_v2/tiny_mce.js")',
+            theme: "advanced",
+            plugins: "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,simplebrowser",
+            file_browser_callback: "TinyMCE_simplebrowser_browse",
+            plugin_simplebrowser_browselinkurl: '/Scripts/tiny_mce_v2/plugins/simplebrowser/browser.htm?connector=/Scripts/tiny_mce_v2/plugins/simplebrowser/connectors/aspx/connector.aspx',
+            plugin_simplebrowser_browseimageurl: '/Scripts/tiny_mce_v2/plugins/simplebrowser/browser.htm?Type=Image&connector=/Scripts/tiny_mce_v2/plugins/simplebrowser/connectors/aspx/connector.aspx',
+            plugin_simplebrowser_browseflashurl: '/Scripts/tiny_mce_v2/plugins/simplebrowser/browser.htm?Type=Flash&connector=/Scripts/tiny_mce_v2/plugins/simplebrowser/connectors/aspx/connector.aspx',
+
+            // Theme options
+            theme_advanced_buttons1: "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,styleselect,formatselect,fontselect,fontsizeselect",
+            theme_advanced_buttons2: "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+            theme_advanced_buttons3: "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
+            theme_advanced_buttons4: "insertlayer,moveforward,movebackward,absolute,|,styleprops,spellchecker,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,blockquote,pagebreak,|,insertfile,insertimage",
+            theme_advanced_toolbar_location: "top",
+            theme_advanced_toolbar_align: "left",
+            @* content_css: "@(AbsoluteThemePath)Styles/main.css",*@
+            relative_urls: false,
+            entity_encoding: "raw",
+            plugin_preview_width: "100%"
+        });
+    });
+</script>

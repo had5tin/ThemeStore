@@ -1,0 +1,44 @@
+﻿@model IEnumerable<User>
+           
+@using (Html.BeginForm()){
+    
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.Partial("_Toolbar")
+            </div>
+            <div class="panel-body">
+                <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Tên đăng nhập</th>
+                            <th>Email đăng nhập</th>
+                            <th>Tên người dùng</th>
+                            <th>Ngày khởi tạo</th>
+                            <th>Lần cập nhật</th>
+                            <th style="width: 105px">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.ActionLink(item.UserName, "Edit/" + item.Id)
+                                </td>
+                                <td>@Html.Raw(item.Email)</td>
+                                <td>@Html.Raw(item.FullName)</td>
+                                <td>@Html.Raw(String.Format("{0:dd/MM/yyyy}", item.Created))</td>
+                                <td>@Html.Raw(String.Format("{0:dd/MM/yyyy}", item.Modified))</td>
+                                <td>
+                                    <div class="text-center">
+                                        <a class="btn btn-default btn-xs" href="@Url.Action("ChangePassword", new { id = item.Id })" title="Đổi mật khẩu"><span class="glyphicon glyphicon-wrench"></span></a>&nbsp;
+                                        <a class="btn btn-danger btn-xs" href="@Url.Action("Delete", new { id = item.Id })" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" title="Xóa"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+}

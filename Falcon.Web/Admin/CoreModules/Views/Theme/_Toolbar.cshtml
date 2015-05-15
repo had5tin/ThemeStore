@@ -1,0 +1,29 @@
+﻿@*@Html.BeginToolbar("Quản trị giao diện", "icon-head head-theme")*@
+<strong>Quản trị giao diện</strong>
+@{
+    switch (ViewContext.RouteData.Values["action"].ToString().ToLower())
+    {
+        case "index":
+            break;
+        case "edit":
+            @Html.Button("Quay lại", ButtonActionType.Back, new {onclick = "setLocation('" + Url.Action("Index") + "')", type = "button"})
+            ;
+            @Html.Button("Reset", ButtonActionType.Reset, new {type = "reset"})
+            ;
+            @Html.Button("Lưu", ButtonActionType.Save)
+            ;
+            @Html.Button("Xóa", ButtonActionType.Delete, new {onclick = "return confirm('Bạn có thực sự muốn xóa những người này?');"})
+            ;
+            break;
+        case "create":
+            @Html.Button("Quay lại", ButtonActionType.Back)
+            ;
+            @Html.Button("Reset", ButtonActionType.Reset, new {type = "reset"})
+            ;
+            @Html.Button("Lưu", ButtonActionType.Save)
+            ;
+            break;
+        default:
+            break;
+    }
+}

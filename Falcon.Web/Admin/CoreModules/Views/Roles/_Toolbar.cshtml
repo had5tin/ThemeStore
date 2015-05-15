@@ -1,0 +1,32 @@
+﻿@*@Html.BeginToolbar((string)ViewBag.Title, "icon-head head-role")*@
+<strong>@ViewBag.Title.ToString()</strong>
+@{
+    switch (ViewContext.RouteData.Values["action"].ToString().ToLower())
+    {
+        case "index":
+            @Html.Button("Thêm vai trò mới", ButtonActionType.Add, new { @class = "btn btn-primary btn-xs pull-right", onclick = "setLocation('" + Url.Action("Create") + "')", type = "button" });
+                                                                                                                                                                                                  break;
+        case "edit":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("Index") + "')", type = "button" });
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+
+        @Html.Button("Lưu vai trò", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+        @Html.Button("Xóa", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa những người này?');" });
+                                                                                                                                     break;
+        case "create":
+        @Html.Button("Quay lại", ButtonActionType.Back);
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+        @Html.Button("Lưu vai trò", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+                                                                                 break;
+        case "editpermission":
+        @Html.Button("Quay lại", ButtonActionType.Back);
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+        @Html.Button("Lưu vai trò", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+                                                                                 break;
+        default:
+                                                                                 break;
+    }
+}

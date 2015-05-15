@@ -1,0 +1,19 @@
+﻿<div class="row form-group">
+    <div class="col-lg-12">
+        <div class="page-header" style="margin-top: 0; border-bottom: none; margin-bottom: 0;">
+            <h2>Giao diện cùng loại</h2>
+        </div>
+        <div>
+            <div id="divTheme">
+
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var query = $(location).attr('search');
+                    loadThemePartial('/ThemeStore/' + query, '#divTheme');
+                });
+            </script>
+        </div>
+    </div>
+</div>
+

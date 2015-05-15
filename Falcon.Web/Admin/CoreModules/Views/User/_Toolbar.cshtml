@@ -1,0 +1,34 @@
+﻿@*@Html.BeginToolbar((string)ViewBag.Title, "icon-head head-customer")*@
+<strong>@ViewBag.Title.ToString()</strong>
+@{
+    switch (ViewContext.RouteData.Values["action"].ToString().ToLower())
+    {
+        case "index":
+            @Html.Button("Thêm mới", ButtonActionType.Add, new { @class = "btn btn-primary btn-xs pull-right", onclick = "setLocation('" + Url.Action("Create") + "')", type = "button" });
+                                                                                                                                           break;
+        case "edit":            
+            @Html.Button("Quay lại", ButtonActionType.Back, new {onclick = "setLocation('" + Url.Action("Index") + "')", @class = "scalable Back cancel", type = "button"});     
+            @Html.Button("Lưu", ButtonActionType.Save);
+            @Html.Button("Xóa người dùng", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa những người này?');" });
+            @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" }); 
+                                                                                 break;
+        case "create":
+            @Html.Button("Quay lại", ButtonActionType.Back, new {onclick = "setLocation('" + Url.Action("Index") + "')", @class = "scalable Back cancel", type = "button"});
+                  
+            @Html.Button("Lưu", ButtonActionType.Save);
+            @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+                                                                                 break;
+        case "delete":
+            @Html.Button("Quay lại", ButtonActionType.Back, new {onclick = "setLocation('" + Url.Action("Index") + "')", @class = "scalable Back cancel", type = "button"});
+            @Html.Button("Xóa người dùng", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa những người này?');" });
+                                                                                                                                                    break;
+        case "changepassword":
+            @Html.Button("Quay lại", ButtonActionType.Back, new {onclick = "setLocation('" + Url.Action("Index") + "')", @class = "scalable Back cancel", type = "button"});                      
+            @Html.Button("Lưu", ButtonActionType.Save);
+            @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+            @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+                                                                                                                                                          break;
+        default:
+                                                                                                                                                          break;
+    }
+}

@@ -1,0 +1,26 @@
+﻿@using Falcon.Security
+@model List<PermissionInfo>
+
+@{
+    var group = Model.GroupBy(p => p.Module);
+}
+@foreach (var module in group) { 
+    <div style="padding:20px">
+        &lt;?xml version="1.0"?&gt;<br />
+        &lt;module&gt;<br />
+          &lt;name&gt;@module.Key&lt;/name&gt;<br />
+          &lt;description&gt;&lt;/description&gt;<br />
+          &lt;controllers&gt;<br />
+          @foreach (var p in module) { 
+              <text>&lt;controller name="@p.Controller"&gt;<br />
+                    @foreach(string action in p.Actions){
+                        <text>&lt;action>@action&lt;/action&gt;</text><br />
+                    }              
+                &lt;/controller&gt; <br />
+            </text>
+          }
+               
+          &lt;/controllers&gt;<br />
+        &lt;/module&gt;
+    </div>
+}

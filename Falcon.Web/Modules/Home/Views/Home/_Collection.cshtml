@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Falcon.Data.Item.Items>
+    <div>
+        @Html.DropDownList("CollectionId", new SelectList(Model, "Value", "Text"), "Tất cả ngành nghề", new { @class = "form-control selectpicker" })
+    </div>
+    <script>
+        $(document).ready(function () {
+            var dropdownList = $("#CollectionId");
+            dropdownList.change(function () {
+                loadTheme();
+            });
+        });
+    </script>

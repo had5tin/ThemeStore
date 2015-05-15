@@ -1,0 +1,21 @@
+﻿Falcon Framework version 1.0
+<br/>&copy; DKT 2011. All right reserved.
+<div id="ajaxLoading" style="display:none">
+    <img src="/Content/Images/loading.gif" alt="loading" /> Đang tải dữ liệu...
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#ajaxLoading')
+            .hide()
+            .ajaxStart(function () {
+                $(this).show();
+            })
+            .ajaxStop(function () {
+                $(this).hide();
+            })
+        ;
+    });
+</script>
+<style type="text/css">
+    #ajaxLoading {position:fixed; top: 0; right: 0; padding:5px; font-size:12px; background-color:#CCCCCC;color:yellow;z-index:10000}
+</style>

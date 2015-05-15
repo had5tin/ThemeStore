@@ -1,0 +1,26 @@
+﻿@model Falcon.Admin.CoreModules.Models.RoleModel
+           
+<table cellspacing="0" class="form-list">
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Name)</td>
+        <td class="value">                            
+            @Html.TextBoxFor(model => model.Name, new { @class = "input-text" })
+                            
+            @Html.ValidationMessageFor(model => model.Name)
+        </td>
+    </tr>
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Description)</td>
+        <td class="value">
+            @Html.TextBoxFor(model => model.Description, new { @class = "input-text" })
+            @Html.ValidationMessageFor(model => model.Description)
+        </td>
+    </tr>                    
+    @*<tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.ParentId)</td>
+        <td class="value">
+            @Html.DropDownListFor(model => model.ParentId, Model.RoleList, "--- Không chọn ---", new { @class = "input-text" })
+            @Html.ValidationMessageFor(model => model.ParentId)
+        </td>
+    </tr>    *@
+</table>

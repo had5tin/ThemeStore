@@ -1,0 +1,14 @@
+﻿@model EditUserModel
+
+@using (Html.BeginForm())
+{    
+    @Html.HiddenFor(model => model.Id)
+    @(Html.Falcon().Tab()
+            .Title("Thông tin tài khoản")
+            .Toolbar(Html.Partial("_Toolbar").ToString())
+            .Items(t => t
+                        .Add("user", "Thông tin tài khoản", @Html.Partial("_Inc_User", Model))
+                        .Add("role", "Vai trò", @Html.Partial("_Inc_Role", Model))
+                        )
+                    .Render())
+}

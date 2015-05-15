@@ -1,0 +1,26 @@
+﻿@using Falcon.Data.Domain
+@model IEnumerable<User>
+           
+@using (Html.BeginForm()){
+    @Html.Partial("_Toolbar")
+        
+    @(Html.Telerik().Grid(Model)
+        .Name("UsersList")        
+        .Columns(columns =>
+        {                        
+            columns.Template(
+                @<text>
+                @Html.ActionLink(item.UserName, "Edit/" + item.Id, new { area = "Users", controller = "Admin" })
+                </text>    
+            ).Title("Người dùng");
+            columns.Bound(o => o.Email).Title("Email");
+            columns.Bound(o => o.FullName).Title("Tên đầy đủ");            
+        })
+        .Scrollable(scrolling => scrolling.Enabled(false))
+        .Sortable(sorting => sorting.Enabled(false))
+        .Pageable(paging => paging.Enabled(true).PageSize(10))
+        .Filterable(filtering => filtering.Enabled(false))
+        .Groupable(grouping => grouping.Enabled(false))
+        .Footer(true)
+        )
+}

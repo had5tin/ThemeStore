@@ -1,0 +1,74 @@
+﻿@model ThemeStore
+@*<div id="vh"></div>*@
+<div class="row form-group">
+    <div class="col-lg-12">
+        <div class="col-md-3">
+            <div class="page-header" style="margin-top: 0;">
+                <h2>@Model.Name</h2>
+            </div>
+            <div>
+                <span>
+                    @Html.Raw(Model.Description)
+                </span>
+            </div>
+            <div>
+                <h3>@Model.Price $</h3>
+                @*<button type="button" class="btn btn-success btn-lg">Sử dụng giao diện này</button>*@
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+                    Sử dụng giao diện này
+                </button>
+                <h5>
+                    Hoặc
+                    <a target="_blank" href="@Model.Demo">
+                        <span>Xem chi tiết ›</span>
+                    </a>
+                </h5>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="col-xs-8 dvDetail dvimgTheme">
+                <div style="margin: 0 auto;">
+                    <a target="_blank" href="#" class="thumbnail">
+                        <img src="/Themes/Portal/Default/Images/Theme/@Model.Image" class="img-theme" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4 dvDetail">
+                <div class="p-rel">
+                    <div class="main-screenshot">
+
+                    </div>
+                    <div class="iphone-position">
+                        <div class="iphone-screenshot">
+                            <span class="iphone">
+                                <a target="_blank" href="#">
+                                    <img src="/Themes/Portal/Default/Images/Theme/Phone/@Model.ImagePhone" />
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+@Html.Partial("/Themes/Portal/Default/Views/Include/_ListTheme.cshtml")
+
+@Html.Partial("/Themes/Portal/Default/Views/Include/_Modal.cshtml")
+<script>
+    $(function () {
+        var $window = $(window);
+        zindex();
+        $window.resize(function () {
+            zindex();
+            //console.log($(window).width());
+        });
+        function zindex() {
+            var height = $('.img-theme').css("height");
+            //console.log(height);
+            $('.main-screenshot').css("height", height);
+            //$('#vh').html($(window).width());
+        }
+    });
+</script>

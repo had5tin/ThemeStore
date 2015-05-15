@@ -1,0 +1,320 @@
+﻿2015-05-07 06:11:02,865 [1    ] INFO  Start Application
+ 2015-05-07 06:11:02,919 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 06:11:05,576 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0389338
+ 2015-05-07 06:11:05,606 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 06:11:05,851 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2448618
+ 2015-05-07 06:11:05,943 [1    ] INFO  Register Routes cost 00:00:00.0385146
+ 2015-05-07 06:11:06,119 [1    ] INFO  Start Application Completed, cost 00:00:03.2211059
+ 2015-05-07 08:25:10,914 [1    ] INFO  Start Application
+ 2015-05-07 08:25:11,033 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 08:25:16,454 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0515761
+ 2015-05-07 08:25:16,496 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 08:25:16,963 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.4667068
+ 2015-05-07 08:25:17,372 [1    ] INFO  Register Routes cost 00:00:00.0225867
+ 2015-05-07 08:25:17,514 [1    ] INFO  Start Application Completed, cost 00:00:06.5250668
+ 2015-05-07 14:31:38,517 [1    ] INFO  Start Application
+ 2015-05-07 14:31:38,642 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 14:31:40,019 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0390198
+ 2015-05-07 14:31:40,088 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 14:31:40,713 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.6251756
+ 2015-05-07 14:31:43,748 [1    ] INFO  Register Routes cost 00:00:02.7721205
+ 2015-05-07 14:31:43,764 [1    ] INFO  Start Application Completed, cost 00:00:05.1866314
+ 2015-05-07 16:36:31,243 [1    ] INFO  Start Application
+ 2015-05-07 16:36:31,418 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 16:36:33,011 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0399137
+ 2015-05-07 16:36:33,081 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 16:36:33,533 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.4515858
+ 2015-05-07 16:36:36,759 [1    ] INFO  Register Routes cost 00:00:02.8929303
+ 2015-05-07 16:36:36,776 [1    ] INFO  Start Application Completed, cost 00:00:05.4744995
+ 2015-05-07 16:36:37,431 [7    ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:36:44,812 [6    ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:36:53,662 [9    ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:37:00,390 [7    ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:37:50,029 [7    ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:39:42,152 [1    ] INFO  Start Application
+ 2015-05-07 16:39:42,250 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 16:39:43,860 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0388259
+ 2015-05-07 16:39:43,927 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 16:39:44,199 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2726978
+ 2015-05-07 16:39:44,980 [1    ] INFO  Register Routes cost 00:00:00.7236341
+ 2015-05-07 16:39:44,995 [1    ] INFO  Start Application Completed, cost 00:00:02.7693459
+ 2015-05-07 16:42:40,573 [17   ] INFO  Start Application
+ 2015-05-07 16:42:40,638 [17   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 16:42:42,222 [17   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0397511
+ 2015-05-07 16:42:42,292 [17   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 16:42:42,547 [17   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2547022
+ 2015-05-07 16:42:43,704 [17   ] INFO  Register Routes cost 00:00:01.0999030
+ 2015-05-07 16:42:43,723 [17   ] INFO  Start Application Completed, cost 00:00:03.1095173
+ 2015-05-07 16:42:43,993 [10   ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:48:32,471 [17   ] INFO  Start Application
+ 2015-05-07 16:48:32,553 [17   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 16:48:33,958 [17   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0383101
+ 2015-05-07 16:48:34,026 [17   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 16:48:34,327 [17   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3003925
+ 2015-05-07 16:48:35,309 [17   ] INFO  Register Routes cost 00:00:00.9068402
+ 2015-05-07 16:48:35,325 [17   ] INFO  Start Application Completed, cost 00:00:02.7956628
+ 2015-05-07 16:48:35,635 [12   ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:52:34,917 [17   ] INFO  Start Application
+ 2015-05-07 16:52:34,976 [17   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 16:52:36,320 [17   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0373798
+ 2015-05-07 16:52:36,388 [17   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 16:52:36,612 [17   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2244659
+ 2015-05-07 16:52:37,332 [17   ] INFO  Register Routes cost 00:00:00.6671923
+ 2015-05-07 16:52:37,347 [17   ] INFO  Start Application Completed, cost 00:00:02.3933080
+ 2015-05-07 16:52:37,562 [13   ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 16:56:30,150 [17   ] INFO  Start Application
+ 2015-05-07 16:56:30,210 [17   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 16:56:31,520 [17   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0367846
+ 2015-05-07 16:56:31,588 [17   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 16:56:31,816 [17   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2274565
+ 2015-05-07 16:56:32,527 [17   ] INFO  Register Routes cost 00:00:00.6592046
+ 2015-05-07 16:56:32,542 [17   ] INFO  Start Application Completed, cost 00:00:02.3542070
+ 2015-05-07 17:11:18,414 [35   ] INFO  Start Application
+ 2015-05-07 17:11:18,477 [35   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 17:11:20,348 [35   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0390871
+ 2015-05-07 17:11:20,426 [35   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 17:11:20,692 [35   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2651653
+ 2015-05-07 17:11:21,740 [35   ] INFO  Register Routes cost 00:00:00.9817565
+ 2015-05-07 17:11:21,757 [35   ] INFO  Start Application Completed, cost 00:00:03.3020141
+ 2015-05-07 17:11:23,127 [34   ] ERROR Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Falcon.Services.Features.FeatureService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Falcon.Data.Repository.IFeatureRepository featureRepository' of constructor 'Void .ctor(Falcon.Data.Repository.IFeatureRepository)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 17:15:55,524 [1    ] INFO  Start Application
+ 2015-05-07 17:15:55,594 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 17:15:57,198 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0386868
+ 2015-05-07 17:15:57,266 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 17:15:57,506 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2397772
+ 2015-05-07 17:15:58,213 [1    ] INFO  Register Routes cost 00:00:00.6523545
+ 2015-05-07 17:15:58,229 [1    ] INFO  Start Application Completed, cost 00:00:02.6601293
+ 2015-05-07 17:15:58,796 [28   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Data.Repository.IFeatureRepository' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 17:16:04,937 [28   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Data.Repository.IFeatureRepository' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 17:16:19,225 [28   ] ERROR Autofac.Core.DependencyResolutionException: No constructors on type 'Falcon.Data.Repository.IFeatureRepository' can be found with the constructor finder 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Falcon.Infrastructure.DependencyManagement.ContainerManager.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\DependencyManagement\ContainerManager.cs:line 133
+   at Falcon.Infrastructure.FalconEngine.ResolveOptional(Type type) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon\Infrastructure\FalconEngine.cs:line 343
+   at Falcon.Mvc.FalconDependencyResolver.GetService(Type serviceType) in d:\Working\Bizweb\BizwebVNext\Sources\Presentation\FalconFramework\Falcon.Core\Mvc\FalconDependencyResolver.cs:line 21
+ 2015-05-07 17:18:29,326 [1    ] INFO  Start Application
+ 2015-05-07 17:18:29,417 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 17:18:30,703 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0361113
+ 2015-05-07 17:18:30,774 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 17:18:30,999 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2252572
+ 2015-05-07 17:18:31,786 [1    ] INFO  Register Routes cost 00:00:00.6468038
+ 2015-05-07 17:18:31,801 [1    ] INFO  Start Application Completed, cost 00:00:02.4088118
+ 2015-05-07 17:21:54,153 [1    ] INFO  Start Application
+ 2015-05-07 17:21:54,248 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 17:21:55,886 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0405449
+ 2015-05-07 17:21:55,955 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 17:21:56,243 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2879881
+ 2015-05-07 17:21:56,945 [1    ] INFO  Register Routes cost 00:00:00.6467227
+ 2015-05-07 17:21:56,961 [1    ] INFO  Start Application Completed, cost 00:00:02.7375840
+ 2015-05-07 17:23:42,172 [1    ] INFO  Start Application
+ 2015-05-07 17:23:42,234 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 17:23:43,602 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0395576
+ 2015-05-07 17:23:43,677 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 17:23:43,914 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2370796
+ 2015-05-07 17:23:44,612 [1    ] INFO  Register Routes cost 00:00:00.6460218
+ 2015-05-07 17:23:44,628 [1    ] INFO  Start Application Completed, cost 00:00:02.4172900
+ 2015-05-07 17:26:07,131 [1    ] INFO  Start Application
+ 2015-05-07 17:26:07,197 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-07 17:26:08,547 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0375681
+ 2015-05-07 17:26:08,616 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-07 17:26:08,867 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2514155
+ 2015-05-07 17:26:09,559 [1    ] INFO  Register Routes cost 00:00:00.6403935
+ 2015-05-07 17:26:09,576 [1    ] INFO  Start Application Completed, cost 00:00:02.4039969
+ 

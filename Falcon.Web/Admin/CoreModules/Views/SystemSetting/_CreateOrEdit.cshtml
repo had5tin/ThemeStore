@@ -1,0 +1,68 @@
+﻿@*@model EmailTemplateModel
+
+<table cellspacing="0" class="form-list">
+@if (Model.Id == 0)
+{ 
+   <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Key)</td>
+        <td class="value">                            
+            @Html.TextBoxFor(model => model.Key, new { @class = "input-text" })
+                            
+            @Html.ValidationMessageFor(model => model.Key)
+        </td>
+    </tr>
+}
+else
+{ 
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Key)</td>
+        <td class="value">                            
+          <b style="color:Red;">  @Model.Key </b>
+        </td>
+    </tr>
+}
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Title)</td>
+        <td class="value">
+            @Html.TextBoxFor(model => model.Title, new { @class = "input-text" })
+            @Html.ValidationMessageFor(model => model.Title)
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Description)</td>
+        <td class="value">
+            @Html.TextAreaFor(model => model.Description, new { style = "width:400px;height:100px;" })
+            @Html.ValidationMessageFor(model => model.Description)
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.IsSystemTemplate)</td>
+        <td class="value">
+            @Html.CheckBoxFor(model => model.IsSystemTemplate)
+            @Html.ValidationMessageFor(model => model.IsSystemTemplate)
+        </td>
+    </tr>
+
+     <tr>
+        <td class="label">@Html.LabelRequiredFor(model => model.Body)</td>
+        <td class="contentEditor" colspan="2" style="min-height:400px"> 
+            @Html.TextAreaFor(model => model.Body, new { id = "Body", style = "width:670px;height:400px" })
+            @Html.ValidationMessageFor(model => model.Body)
+        </td>
+    </tr>
+
+</table>
+
+<script type="text/javascript">
+ $(document).ready(function () {                      
+        $('#Body').tinymce({
+            script_url: '@Url.Content("~/Scripts/tiny_mce/tiny_mce.js")',
+            theme: "advanced",
+            theme_advanced_toolbar_location : "top",
+            theme_advanced_toolbar_align : "left",
+            content_css : "@(AbsoluteThemePath)Styles/main.css",
+        });
+});
+</script>*@

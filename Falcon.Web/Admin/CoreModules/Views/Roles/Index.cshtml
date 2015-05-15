@@ -1,0 +1,39 @@
+﻿
+@model IEnumerable<Role>
+           
+@using (Html.BeginForm()){
+    
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.Partial("_Toolbar")
+            </div>
+            <div class="panel-body">
+                <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Tên vai trò</th>
+                            <th>Mô tả</th>
+                            <th style="width: 105px">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.ActionLink(item.Name, "Edit", new { id = item.Id })
+                                </td>
+                                <td>@Html.Raw(item.Description)</td>
+                                <td>
+                                    <div class="text-center">
+                                        <a class="btn btn-default btn-xs" href="@Url.Action("ListUsers", new { id = item.Id })" title="Người dùng"><span class="glyphicon glyphicon-user"></span></a>&nbsp;
+                                        <a class="btn btn-danger btn-xs" href="@Url.Action("EditPermission", new { id = item.Id })" title="Phân quyền"><span class="glyphicon glyphicon-cog"></span></a>&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+}

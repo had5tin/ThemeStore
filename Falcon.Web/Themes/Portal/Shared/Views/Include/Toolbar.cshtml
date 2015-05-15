@@ -1,0 +1,71 @@
+﻿<div class="" id="toolbar">
+    <div role="toolbar" class="btn-toolbar">
+        <div class="col-xs-6 col-sm-3 col-md-3 dvtoolbar dvtool">
+            <form method="get" accept-charset="UTF-8" action="/giaodien/search/" id="formSearch">
+                <div class="input-group">
+                    <input id="search" type="text" name="search" class="form-control" placeholder="Nhập từ khóa cần tìm" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="btnSearch">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                    @*<input id="Submit1" type="submit" value="submit" />*@
+                </div><!-- /input-group -->
+            </form>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 dvtoolbar dvtool">
+            <div class="btn-group btn-group-justified" id="dvPrice">
+                <a role="button" class="btn btn-default" href="/?price=all">Tất cả</a>
+                <a role="button" class="btn btn-default" href="/?price=free">Miễn phí</a>
+                <a role="button" class="btn btn-default" href="/?price=paid">Trả phí</a>
+            </div>
+
+        </div>
+        <div class="col-xs-4 col-sm-2 col-md-2 dvtool dvFeature">
+            <div id="dvFeature">
+                <select class="form-control selectpicker">
+                    <option>Tính năng</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-2 col-md-2 dvtool dvColletion">
+            <div id="dvColletion">
+                <select class="form-control selectpicker">
+                    <option>Tất cả ngành nghề</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-2 col-md-2 dvtool dvSort">
+            <div id="dvSort">
+                <select name="SortId" id="SortId" class="form-control selectpicker">
+                    <option value="">Sắp xếp</option>
+                    <option value="1">Giá</option>
+                    <option value="2">Tên</option>
+                    <option value="3">Bán chạy nhất</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Themes/Portal/Shared/Scripts/loadToolbarPartial.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btnSearch").click(function () {
+            $("#formSearch").submit();
+        });
+        //var dropdownList = $("#SearchId");
+
+        $("#SortId").change(function () {
+            loadTheme();
+        });
+        $('#dvPrice a').click(function () {
+            $('#dvPrice a').removeClass("active");
+            $(this).addClass("active");
+            //console.log('ok');
+            loadTheme();
+
+            return false;
+        });
+    });
+</script>

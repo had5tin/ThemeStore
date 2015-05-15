@@ -1,0 +1,71 @@
+﻿<ul class="nav navbar-nav navbar-nav-expanded pull-right margin-md-right">
+    <li class="hidden-xs">
+        <form class="navbar-form">
+            <div class="navbar-search">
+                <input type="text" placeholder="Search &hellip;" class="form-control" />
+                <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+            <i class="glyphicon glyphicon-envelope"></i>
+            <span class="badge badge-up badge-dark badge-small">3</span>
+        </a>
+        @*<ul class="dropdown-menu dropdown-messages pull-right">
+            <li class="dropdown-title bg-inverse">New Messages</li>
+            <li class="unread">
+                <a href="javascript:;" class="message">
+                    <img class="message-image img-circle" src="demo/images/avatars/1.jpg" />
+                    <div class="message-body">
+                        <strong>Ernest Kerry</strong><br />
+                        Hello, You there?<br />
+                        <small class="text-muted">8 minutes ago</small>
+                    </div>
+                </a>
+            </li>
+            <li class="dropdown-footer">
+                <a href="javascript:;"><i class="fa fa-share"></i> See all messages</a>
+            </li>
+        </ul>*@
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+            <i class="glyphicon glyphicon-globe"></i>
+            <span class="badge badge-up badge-danger badge-small">3</span>
+        </a>
+        @*<ul class="dropdown-menu dropdown-notifications pull-right">
+            <li class="dropdown-title bg-inverse">Notifications (3)</li>
+            <li>
+                <a href="javascript:;" class="notification">
+                    <div class="notification-thumb pull-left">
+                        <i class="fa fa-clock-o fa-2x text-info"></i>
+                    </div>
+                    <div class="notification-body">
+                        <strong>Call with John</strong><br />
+                        <small class="text-muted">8 minutes ago</small>
+                    </div>
+                </a>
+            </li>
+            <li class="dropdown-footer">
+                <a href="javascript:;"><i class="fa fa-share"></i> See all notifications</a>
+            </li>
+        </ul>*@
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle navbar-user" href="javascript:;">
+            <img class="img-circle" src="demo/images/profile.jpg" />
+            <span class="hidden-xs">@User.Identity.Name</span>
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu pull-right-xs">
+            <li class="arrow"></li>
+            <li><a href="pages-profile.html">Profile</a></li>
+            <li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+            <li><a href="javascript:;">Messages</a></li>
+            <li><a href="javascript:;">Settings</a></li>
+            <li class="divider"></li>
+            <li>@Html.ActionLink("Đăng xuất", "Logout", new { area = "Users", controller = "Users" }, new { @class = "link-logout" })</li>
+        </ul>
+    </li>
+</ul>

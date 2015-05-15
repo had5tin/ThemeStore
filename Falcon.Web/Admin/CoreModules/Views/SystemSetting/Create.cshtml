@@ -1,0 +1,87 @@
+﻿@model SystemSettingModel
+
+@using (Html.BeginForm())
+{
+    @Html.Partial("_Toolbar")
+                           
+    @Html.ValidationSummary(true)
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-edit-form fieldset-legend">Thêm mới SystemSetting </h4>
+            <div class="form-buttons"></div>
+        </div>
+        <div class="fieldset " id="user_base_fieldset">
+            <div class="hor-scroll">
+               <table cellspacing="0" class="form-list">
+                   <tr>
+                        <td class="label">@Html.LabelRequiredFor(model => model.SettingKey)</td>
+                        <td class="value">                            
+                            @Html.TextBoxFor(model => model.SettingKey, new { @class = "input-text" })
+                            
+                            @Html.ValidationMessageFor(model => model.SettingKey)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">@Html.LabelRequiredFor(model => model.Title)</td>
+                        <td class="value">
+                            @Html.TextBoxFor(model => model.Title, new { @class = "input-text" })
+                            @Html.ValidationMessageFor(model => model.Title)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">@Html.LabelRequiredFor(model => model.Description)</td>
+                        <td class="value">
+                            @Html.TextAreaFor(model => model.Description, new { style = "width:400px;height:100px;" })
+                            @Html.ValidationMessageFor(model => model.Description)
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class="label">@Html.LabelRequiredFor(model => model.Type)</td>
+                        <td class="value">
+                            @Html.DropDownListFor(model => model.Type, Model.SystemSettingType, new { @class = "input-text" , onchange="checkType(this.value);" })
+                            @Html.ValidationMessageFor(model => model.Type)
+                        </td>
+                    </tr>
+                     <tr id="divText">
+                        <td class="label">@Html.LabelRequiredFor(model => model.Value)</td>
+                        <td class="value">
+                            @Html.TextBoxFor(model => model.Value, new { @class = "input-text" })
+                            @Html.ValidationMessageFor(model => model.Value)
+                        </td>
+                    </tr>
+                    <tr id="divOptions">
+                        <td class="label">@Html.LabelRequiredFor(model => model.Options)</td>
+                        <td class="value">
+                            @Html.TextBoxFor(model => model.Options, new { @class = "input-text" })
+                            @Html.ValidationMessageFor(model => model.Options)
+                            <i>Nhập dữ liệu dạng :  Value=Text|Value=Text (10=10|50=50|100=100)</i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">@Html.LabelRequiredFor(model => model.IsRequired)</td>
+                        <td class="value">
+                            @Html.CheckBoxFor(model => model.IsRequired)
+                            @Html.ValidationMessageFor(model => model.IsRequired)
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+    checkType(1);
+    function checkType(type) {
+        if (type == 1 || type == 2 || type == 6) {
+            $("#divOptions").hide();
+        }
+        else {
+            $("#divOptions").show();
+        }
+    }
+</script>
+

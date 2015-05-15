@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+}
+
+<div class="col-lg-12 text-center show" id="loadTheme" style="margin: 15px 0;">
+    @*<img src="/Themes/Portal/Shared/Images/loading110.gif" />*@
+    <img src="/Themes/Portal/Shared/Images/spinner.gif" />
+</div>
+<div id="divTheme">
+
+</div>
+<script>
+    $(document).ready(function () {
+        var query = $(location).attr('search');
+        loadThemePartial('/ThemeStore/' + query, '#divTheme');
+    });
+</script>

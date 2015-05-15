@@ -1,0 +1,141 @@
+﻿2015-04-24 09:39:30,014 [1    ] INFO  Start Application
+ 2015-04-24 09:39:30,054 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 09:39:30,324 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0274623
+ 2015-04-24 09:39:30,364 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 09:39:30,699 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3341545
+ 2015-04-24 09:39:32,044 [1    ] INFO  Register Routes cost 00:00:01.2917010
+ 2015-04-24 09:39:32,053 [1    ] INFO  Start Application Completed, cost 00:00:02.0274257
+ 2015-04-24 09:51:00,399 [1    ] INFO  Start Application
+ 2015-04-24 09:51:00,429 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 09:51:00,702 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0254277
+ 2015-04-24 09:51:00,739 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 09:51:00,985 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2461278
+ 2015-04-24 09:51:01,966 [1    ] INFO  Register Routes cost 00:00:00.9381520
+ 2015-04-24 09:51:01,974 [1    ] INFO  Start Application Completed, cost 00:00:01.5627571
+ 2015-04-24 09:52:18,065 [1    ] INFO  Start Application
+ 2015-04-24 09:52:18,102 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 09:52:18,356 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0221403
+ 2015-04-24 09:52:18,402 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 09:52:18,647 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2444709
+ 2015-04-24 09:52:18,708 [1    ] INFO  Register Routes cost 00:00:00.0197921
+ 2015-04-24 09:52:18,721 [1    ] INFO  Start Application Completed, cost 00:00:00.6442530
+ 2015-04-24 09:54:40,392 [1    ] INFO  Start Application
+ 2015-04-24 09:54:40,422 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 09:54:40,694 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0239954
+ 2015-04-24 09:54:40,729 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 09:54:40,985 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2563536
+ 2015-04-24 09:54:41,987 [1    ] INFO  Register Routes cost 00:00:00.9604200
+ 2015-04-24 09:54:41,996 [1    ] INFO  Start Application Completed, cost 00:00:01.5924312
+ 2015-04-24 09:55:38,281 [1    ] INFO  Start Application
+ 2015-04-24 09:55:38,312 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 09:55:38,563 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0288360
+ 2015-04-24 09:55:38,607 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 09:55:38,870 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2630992
+ 2015-04-24 09:55:40,044 [1    ] INFO  Register Routes cost 00:00:01.1289940
+ 2015-04-24 09:55:40,053 [1    ] INFO  Start Application Completed, cost 00:00:01.7590709
+ 2015-04-24 09:56:49,411 [1    ] INFO  Start Application
+ 2015-04-24 09:56:49,443 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 09:56:49,699 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0301745
+ 2015-04-24 09:56:49,737 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 09:56:49,996 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2584528
+ 2015-04-24 09:56:51,001 [1    ] INFO  Register Routes cost 00:00:00.9645626
+ 2015-04-24 09:56:51,010 [1    ] INFO  Start Application Completed, cost 00:00:01.5877696
+ 2015-04-24 10:04:12,325 [1    ] INFO  Start Application
+ 2015-04-24 10:04:12,355 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 10:04:12,609 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0239993
+ 2015-04-24 10:04:12,647 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 10:04:12,904 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2572082
+ 2015-04-24 10:04:13,832 [1    ] INFO  Register Routes cost 00:00:00.8876599
+ 2015-04-24 10:04:13,840 [1    ] INFO  Start Application Completed, cost 00:00:01.5033263
+ 2015-04-24 10:06:37,332 [1    ] INFO  Start Application
+ 2015-04-24 10:06:37,363 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 10:06:37,608 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0234108
+ 2015-04-24 10:06:37,644 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 10:06:37,887 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2428051
+ 2015-04-24 10:06:38,846 [1    ] INFO  Register Routes cost 00:00:00.9184038
+ 2015-04-24 10:06:38,854 [1    ] INFO  Start Application Completed, cost 00:00:01.5107808
+ 2015-04-24 10:08:17,031 [1    ] INFO  Start Application
+ 2015-04-24 10:08:17,064 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 10:08:17,977 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0318505
+ 2015-04-24 10:08:18,025 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 10:08:18,359 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3333771
+ 2015-04-24 10:08:20,770 [1    ] INFO  Register Routes cost 00:00:02.3599898
+ 2015-04-24 10:08:20,779 [1    ] INFO  Start Application Completed, cost 00:00:03.7347819
+ 2015-04-24 10:11:06,477 [1    ] INFO  Start Application
+ 2015-04-24 10:11:06,585 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 10:11:08,327 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0581833
+ 2015-04-24 10:11:08,419 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 10:11:08,910 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.4904020
+ 2015-04-24 10:11:10,207 [1    ] INFO  Register Routes cost 00:00:01.2104810
+ 2015-04-24 10:11:10,237 [1    ] INFO  Start Application Completed, cost 00:00:03.6987746
+ 2015-04-24 10:14:57,880 [1    ] INFO  Start Application
+ 2015-04-24 10:14:57,937 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 10:14:59,195 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0370801
+ 2015-04-24 10:14:59,262 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 10:14:59,498 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2362488
+ 2015-04-24 10:14:59,589 [1    ] INFO  Register Routes cost 00:00:00.0409653
+ 2015-04-24 10:14:59,607 [1    ] INFO  Start Application Completed, cost 00:00:01.6912908
+ 2015-04-24 10:37:31,364 [1    ] INFO  Start Application
+ 2015-04-24 10:37:31,426 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 10:37:32,630 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0361995
+ 2015-04-24 10:37:32,700 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 10:37:33,061 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3611502
+ 2015-04-24 10:37:33,166 [1    ] INFO  Register Routes cost 00:00:00.0405236
+ 2015-04-24 10:37:33,184 [1    ] INFO  Start Application Completed, cost 00:00:01.7848666
+ 2015-04-24 11:26:01,909 [1    ] INFO  Start Application
+ 2015-04-24 11:26:01,971 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:26:03,119 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0443110
+ 2015-04-24 11:26:03,148 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:26:03,427 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2791519
+ 2015-04-24 11:26:03,499 [1    ] INFO  Register Routes cost 00:00:00.0192080
+ 2015-04-24 11:26:03,516 [1    ] INFO  Start Application Completed, cost 00:00:01.5649977
+ 2015-04-24 11:28:21,578 [1    ] INFO  Start Application
+ 2015-04-24 11:28:21,646 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:28:22,895 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0346546
+ 2015-04-24 11:28:22,967 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:28:23,206 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2390529
+ 2015-04-24 11:28:24,242 [1    ] INFO  Register Routes cost 00:00:00.9838088
+ 2015-04-24 11:28:24,258 [1    ] INFO  Start Application Completed, cost 00:00:02.6383952
+ 2015-04-24 11:30:17,533 [16   ] INFO  Start Application
+ 2015-04-24 11:30:17,599 [16   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:30:19,301 [16   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0474238
+ 2015-04-24 11:30:19,382 [16   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:30:19,654 [16   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2707127
+ 2015-04-24 11:30:19,776 [16   ] INFO  Register Routes cost 00:00:00.0526358
+ 2015-04-24 11:30:19,801 [16   ] INFO  Start Application Completed, cost 00:00:02.2228794
+ 2015-04-24 11:36:38,171 [16   ] INFO  Start Application
+ 2015-04-24 11:36:38,233 [16   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:36:39,414 [16   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0345127
+ 2015-04-24 11:36:39,481 [16   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:36:39,704 [16   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2230159
+ 2015-04-24 11:36:40,418 [16   ] INFO  Register Routes cost 00:00:00.6612606
+ 2015-04-24 11:36:40,433 [16   ] INFO  Start Application Completed, cost 00:00:02.2246425
+ 2015-04-24 11:37:53,994 [16   ] INFO  Start Application
+ 2015-04-24 11:37:54,055 [16   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:37:55,232 [16   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0365537
+ 2015-04-24 11:37:55,300 [16   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:37:55,527 [16   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2275635
+ 2015-04-24 11:37:55,617 [16   ] INFO  Register Routes cost 00:00:00.0398397
+ 2015-04-24 11:37:55,636 [16   ] INFO  Start Application Completed, cost 00:00:01.6025464
+ 2015-04-24 11:39:32,586 [16   ] INFO  Start Application
+ 2015-04-24 11:39:32,653 [16   ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:39:33,924 [16   ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0348288
+ 2015-04-24 11:39:33,991 [16   ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:39:34,230 [16   ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2383509
+ 2015-04-24 11:39:34,922 [16   ] INFO  Register Routes cost 00:00:00.6436459
+ 2015-04-24 11:39:34,937 [16   ] INFO  Start Application Completed, cost 00:00:02.3102320
+ 2015-04-24 11:42:05,095 [1    ] INFO  Start Application
+ 2015-04-24 11:42:05,151 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 11:42:06,422 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0407760
+ 2015-04-24 11:42:06,518 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 11:42:06,805 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.2871352
+ 2015-04-24 11:42:06,918 [1    ] INFO  Register Routes cost 00:00:00.0508291
+ 2015-04-24 11:42:06,939 [1    ] INFO  Start Application Completed, cost 00:00:01.8088233
+ 2015-04-24 12:15:22,149 [1    ] INFO  Start Application
+ 2015-04-24 12:15:22,208 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-04-24 12:15:23,395 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0467115
+ 2015-04-24 12:15:23,465 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-04-24 12:15:23,810 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.3446963
+ 2015-04-24 12:15:23,910 [1    ] INFO  Register Routes cost 00:00:00.0392732
+ 2015-04-24 12:15:23,928 [1    ] INFO  Start Application Completed, cost 00:00:01.7429257
+ 

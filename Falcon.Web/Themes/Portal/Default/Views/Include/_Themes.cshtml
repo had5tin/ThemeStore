@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ThemeStore>
+
+
+    <div class="skins-home-items">
+        @if (!Model.Any())
+        {
+            <div style="margin-top: 0;" class="page-header">
+                <h2>Xin lỗi bạn, giao diện này chưa có trong hệ thống</h2>
+            </div>
+        }
+        else
+        {
+            foreach (var theme in Model)
+            {
+                <div class="skin-item nn-prod-box">
+                    @*<a target="_blank" title="Xem chi tiết" href="~/ThemeStore/details/@theme.SeoUrl" class="thumbnail">*@
+                    <a title="Xem chi tiết" href="~/ThemeStore/details/@theme.SeoUrl" class="thumbnail">
+                        <div class="">
+                            <img class="img-responsive" alt="" src="/Themes/Portal/Default/Images/Theme/@theme.Image" />
+                            @*<div style="background-color: red;width: 100%;height: 3px;">
+
+                                </div>*@
+                            <div class="nn-prod-icon">
+                                <h4>@theme.Name</h4>
+                                <span>@theme.Price $</span>
+                            </div>
+                        </div>
+                    </a>
+                    @*<div class="control">
+                            <h3>@theme.Name</h3>
+                            <a rel="gallery1" class="zoom">
+                                <img alt="Ecom299" src="/Themes/Portal/Default/Images/skin/bt_zoom.png">
+                            </a><br>
+                            <a onclick=" javascript:RegWithSkin(116954); " class="btn btn-primary" title="Đăng ký dùng thử website miễn phí" href="javascript:;">
+                                Dùng thử
+                            </a>
+                            <a target="_blank" class="btn btn-success" title="Xem chi tiết" href="~/giaodien/details/@theme.SeoUrl">
+                                <span>Xem chi tiết ›</span>
+                            </a>
+                        </div>*@
+                </div>
+            }
+        }
+    </div>

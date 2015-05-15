@@ -1,0 +1,21 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    string ErrorMessage = ViewBag.ErrorMessage;    
+}
+<!DOCTYPE>
+<html>
+<head>
+    <title>@if (string.IsNullOrEmpty(ErrorMessage))
+                {
+                    <text>Không tìm thấy trang</text>
+                }else{
+                    <text>@ErrorMessage</text>   
+                }</title>
+    <style type="text/css">
+        li{padding:3px 0;}
+    </style>
+</head>
+<body>
+       <h1>Page not found!</h1>
+</body>
+</html>

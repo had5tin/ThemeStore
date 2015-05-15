@@ -1,0 +1,55 @@
+﻿@model IEnumerable<StaticPage>
+
+    @{
+        Func<bool, string> getState = state => state ? "Hiển thị" : "Ẩn";
+    }
+    @*StaticPage*@
+
+    @using (Html.BeginForm())
+    {
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.Partial("_Toolbar")
+            </div>
+            <div class="panel-body">
+                <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Tiêu đề</th>
+                            <th>SEO Url</th>
+                            <th>Khung nội dung</th>
+                            <th>Trạng thái</th>
+                            <th>Ngày tạo</th>
+                            <th>Cập nhật</th>
+                            <th style="width: 105px">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.ActionLink(item.Title, "details", new { controller = "Pages", title = item.SeoUrl })
+                                </td>
+                                <td>@Html.Raw(item.SeoUrl)</td>
+                                <td>@Html.Raw(item.Layout)</td>
+                                <td>@Html.Raw(item.IsActive)</td>
+                                <td>@Html.Raw(String.Format("{0:dd/MM/yyyy hh:mm:ss}", item.Created))</td>
+                                <td>@Html.Raw(String.Format("{0:dd/MM/yyyy hh:mm:ss}", item.Modified))</td>
+                                <td>
+                                    <div class="text-center">
+                                        <a class="btn btn-default btn-xs" href="@Url.Action("Edit", new { id = item.Id })" title="Sửa"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                                        <a class="btn btn-danger btn-xs" href="@Url.Action("Delete", new { id = item.Id })" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" title="Xóa"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;
+                                    </div>
+                                    @*@Html.ActionLink("Sửa", "edit", new { id = item.Id }) |
+                                        @Html.ActionLink("Xóa", "delete", new { id = item.Id }, new { onclick = "return deleteConfirm('Bạn có  chắc chắn muốn xóa người dùng này không?', '" + @Url.Action("delete", new { id = item.Id }) + "')" })*@
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    }

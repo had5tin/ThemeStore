@@ -1,0 +1,63 @@
+﻿@using Falcon.Security
+@model Role
+           
+@using (Html.BeginForm())
+{ 
+    @Html.Partial("_Toolbar")
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-edit-form fieldset-legend">
+                Thông tin phân quyền</h4>
+            <div class="form-buttons">
+            </div>
+        </div>
+        <div id="base_fieldset">
+            <div class="hor-scroll">
+                <table cellspacing="0" style="width:100%;padding-top:10px" class="form-list">
+                    <tr>
+                        <td class="label">
+                            Bảng phân quyền
+                        </td>
+                        <td>
+                            <div id="permissionTree">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+<script type="text/javascript">
+    $(function () {
+        var tree = $("#permissionTree");
+        tree.bind("loaded.jstree", function (event, data) {
+            tree.jstree("open_all");
+            $('#permissionTree li[selected=selected]').each(function () {
+                $(this).removeClass('jstree-unchecked').addClass('jstree-checked');
+            });
+        });
+        tree.jstree({ 
+            "core" : {
+                load_open	: true,
+			    strings		: {
+				    loading		: "Đang nạp dữ liệu ...",				    
+			    }
+            },
+            "plugins" : [ "themes", "json_data","ui", "checkbox" ],
+		    "json_data" : {
+			    "ajax" : {
+                    "method": "GET",
+				    "url" : "@Url.Action("GetRoleTreeData", new { id = Model.Id })",
+			    }
+		    },
+            "themes" : {
+			    "theme" : "default",
+		    },
+            "checkbox": {
+                "real_checkboxes": true,                
+                "two_state": false
+            }
+	    });
+    });
+</script>

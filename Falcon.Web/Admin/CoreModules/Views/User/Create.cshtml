@@ -1,0 +1,12 @@
+﻿@model Falcon.Admin.CoreModules.Models.CreateUserModel
+@using (Html.BeginForm())
+{        
+    @(Html.Falcon().Tab()
+            .Title("Thông tin tài khoản")
+            .Toolbar(Html.Partial("_Toolbar").ToString())
+            .Items(t => t
+                        .Add("user", "Thông tin tài khoản", @Html.Partial("_Inc_UserCreate", Model))
+                        .Add("role", "Vai trò", @Html.Partial("_Inc_RoleCreate", Model))
+                        )
+                    .Render())
+}

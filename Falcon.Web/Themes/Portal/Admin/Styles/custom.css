@@ -1,0 +1,100 @@
+.t-alt{background-color:#F7F7F7}
+.dragSelectedItem{background-color:#F9D423;border:solid 2px #ED6502}
+.dragSelectedItem td {border:none}
+
+
+.column_step
+{
+    border: 1px solid #dfdfdf;
+    margin-right: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.column_step ul
+{
+    list-style: none;
+}
+.column_step ul li
+{
+    padding: 8px 3px 8px 8px;
+    border-bottom: 1px solid #dfdfdf;
+    cursor: pointer;
+}
+.column_step ul li.arrow span
+{
+    background: url("../Images/arrow.gif") no-repeat scroll right center transparent;
+}
+.column_step ul li.selected, .column_step ul li.last_select
+{
+    background-color: #f4f4f4;
+}
+.column_step ul li.last_select span
+{
+    background: url("../Images/icon_last_select.gif") no-repeat scroll right center #f4f4f4;
+}
+.column_step ul li.selected span, .column_step ul li.last_select span
+{
+    color: #cb0101;
+    font-weight: bold;
+}
+.column_step ul li:last-child
+{
+    border-bottom: none;
+}
+.column_step ul li span
+{
+    color: #535353;
+    display: block;
+    padding-right: 20px;
+}
+.column_step ul li a:hover
+{
+    text-decoration: none;
+}
+
+.select_category
+{
+    padding: 10px;
+    overflow: hidden;
+}
+.select_category .step
+{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: Red;
+}
+.select_category .combobox select
+{
+    border: 1px solid #DFDFDF;
+}
+.select_category .combobox select option
+{
+    padding: 5px 15px 5px 5px;
+}
+.select_category .combobox select option.arrow
+{
+    background: url('../Images/arrow.gif') no-repeat right center;
+}
+
+.select_cat_note .step
+{
+    background: url("../Images/icon_step.gif") no-repeat;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+span.field-validation-error {
+color: red;
+}
+.field-validation-error {
+clear: both;
+min-height: 15px;
+margin-top: 3px;
+background: url(../images/validation_advice_bg.gif) no-repeat 2px 1px;
+padding-left: 16px;
+font-size: .95em;
+font-weight: bold;
+line-height: 1.25em;

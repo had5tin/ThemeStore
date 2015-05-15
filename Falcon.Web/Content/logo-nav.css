@@ -1,0 +1,38 @@
+/*!
+ * Start Bootstrap - Logo Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+.nav-logo .nav {
+    padding: 15px 0;
+}
+
+.nav-logo .navbar-brand {
+    padding: 0 15px;
+}
+
+.nav-logo .navbar-header {
+    min-height: 60px;
+}
+
+@media(min-width:768px) {
+
+    .nav-logo .navbar-brand {
+        padding: 15px 0;
+        margin-left: 0 !important;
+        /*width: 190px;*/
+    }
+}
+
+@media(max-width: 480px) {
+
+    .nav-logo .navbar-brand {
+        width: 190px;
+    }
+
+    .nav-logo .navbar-header {
+        min-height: 50px;
+    }
+}

@@ -1,0 +1,14 @@
+﻿@model Falcon.Admin.Modules.Contents.Models.StaticPageModel
+
+@using (Html.BeginForm())
+{    
+    @Html.HiddenFor(model => model.Id)
+    @(Html.Falcon().Tab()
+            .Title("Thông tin trang")
+            .Toolbar(Html.Partial("_Toolbar").ToString())
+            .Items(t => t
+                        .Add("main","Thông tin trang", @Html.Partial("_Inc_MainInfo", Model))
+                        .Add("seo", "Thiết lập SEO", @Html.Partial("_Inc_SeoInfo", Model))
+                        )
+                    .Render())
+}

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<SystemSetting>
+       
+@{
+    Func<Nullable<int>, string> getType = type => {
+        switch (type)
+        {
+            case 1:
+                return "text";
+            case 2:
+                return "textarea";
+            case 3:
+                return "checkbox";
+            case 4:
+                return "radio";
+            case 5:
+                return "select";
+            case 6:
+                return "html";
+            default :
+                return "text";
+        }
+    }; 
+}
+
+@using (Html.BeginForm()){
+    
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.Partial("_Toolbar")
+            </div>
+            <div class="panel-body">
+                <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Tiêu đề</th>
+                            <th>Mô tả</th>
+                            <th>Giá trị</th>
+                            <th>Kiểu</th>
+                            <th style="width: 105px">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.ActionLink(item.SettingKey, "EditValue", new { key = item.SettingKey })
+                                </td>
+                                <td>@Html.Raw(item.Title)</td>
+                                <td>@Html.Raw(item.Description)</td>
+                                <td>@Html.Raw(item.Value)</td>
+                                <td>@Html.Raw(getType(item.Type))</td>
+                                <td>
+                                    <div class="text-center">
+                                        <a class="btn btn-default btn-xs" href="@Url.Action("Edit", new { key = item.SettingKey })" title="Sửa"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                                        <a class="btn btn-danger btn-xs" href="@Url.Action("Delete", new { key = item.SettingKey })" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" title="Xóa"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+}

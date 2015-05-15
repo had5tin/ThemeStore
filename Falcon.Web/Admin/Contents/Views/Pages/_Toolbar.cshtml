@@ -1,0 +1,33 @@
+﻿@*@Html.BeginToolbar(ViewData["ToolbarTitle"].ToString(), "icon-head head-cms-page")*@
+
+<strong>@ViewData["ToolbarTitle"].ToString()</strong>
+<span>
+@{
+    switch (ViewContext.RouteData.Values["action"].ToString().ToLower())
+    {
+        case "index":
+        @Html.Button("Thêm mới", ButtonActionType.Add, new { @class="btn btn-primary btn-xs pull-right",onclick = "setLocation('" + Url.Action("create") + "')", type = "button" });
+        break;
+        case "edit":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("index") + "')", type = "button" });
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+        @Html.Button("Xóa trang", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa trang tĩnh này?');" });
+        @Html.Button("Lưu trang", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+        break;
+        case "create":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("index") + "')", type = "button" });
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+        @Html.Button("Lưu trang", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+        break;
+        case "delete":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("index") + "')", type = "button" });
+        @Html.Button("Xóa trang", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa trang này?');" });
+        break;
+        default:
+        break;
+    }
+}
+</span>
+@*@Html.EndToolbar()*@

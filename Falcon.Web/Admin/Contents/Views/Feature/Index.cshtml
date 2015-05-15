@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Feature>
+@{
+    ViewBag.Title = "Quản lý Tính năng";
+}
+
+@using (Html.BeginForm())
+{
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            @Html.Partial("_Toolbar")
+        </div>
+        <div class="panel-body">
+            <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Tên</th>
+                        <th style="width: 105px">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Id
+                            </td>
+                            <td>
+                                @item.Name
+                            </td>
+                            <td>
+                                    <div class="text-center">
+                                        <a class="btn btn-default btn-xs" href="@Url.Action("Edit", new { key = item.Id })" title="Sửa"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                                        <a class="btn btn-danger btn-xs" href="@Url.Action("Delete", new { key = item.Id })" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" title="Xóa"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;
+                                    </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+

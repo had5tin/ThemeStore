@@ -1,0 +1,48 @@
+﻿<div class="wrapper">
+    <div class="row row-centered">
+        <div class="col-sm-5 col-centered">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 style="color: #ea533f">
+                        <i class="glyphicon glyphicon-log-in">                        </i>
+                        Đăng nhập quản trị
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    @using (Html.BeginForm("Index", "Login", new { returnUrl = Request.QueryString["returnUrl"] }, FormMethod.Post))
+                    {
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span>
+                                    @Html.TextBox("Username", null, new { @class = "form-control", id = "Username", placeholder = "Tài Khoản" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span>
+                                    @Html.Password("PassWord", null, new { @class = "form-control", id = "Password", @placeholder = "Mật Khẩu" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block" type="submit">
+                                    Đăng Nhập
+                                </button>
+                                <p class="help-block">
+                                    @Html.ActionLink("Quên mật khẩu?", "ForgotPassword", new { area = "Users", controller = "Users" }, new { @class = "pull-right text-muted" })
+                                </p>
+                            </div>
+                        </fieldset>
+                    }
+                </div>
+                <div class="panel-footer">
+                    <p class="text-center">Falcon Framework is a trademark of DKT Technology Jsc. <br />Copyright &copy; @DateTime.Now.Year DKT Technology Jsc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Common", "Falcon.Common\Falcon.Common.csproj", "{25710D91-2715-4C6A-9BB4-0CE7A27BF29C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Data", "Falcon.Data\Falcon.Data.csproj", "{0AB94496-B90F-4C22-A152-3F2C30164AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Libraries.Models", "Falcon.Libraries\Models\Falcon.Libraries.Models.csproj", "{2D700ED9-9249-4697-BA2B-86538D7B37E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Services", "Falcon.Services\Falcon.Services.csproj", "{F46BF8D9-46B0-44B9-B78E-05309A9C35BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Services.Core", "Falcon.Services.Core\Falcon.Services.Core.csproj", "{DCCD1B8E-EE43-473D-A952-0F18CAAFF942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Startup", "Falcon.Startup\Falcon.Startup.csproj", "{F940C17E-6D44-4492-B463-BDA93409143C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{966AB486-8B26-4612-A03F-76CACE6B999B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Modules.Home", "Falcon.Web\Modules\Home\Falcon.Modules.Home.csproj", "{A67B7DD1-59D8-48D3-9F31-D1227F375B86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Web", "Falcon.Web\Falcon.Web.csproj", "{07A28B0B-5ABC-4124-BDD9-0EA2B0A2692F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{9518D177-E611-49AF-89CC-96C50DA3E5D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreFramework", "CoreFramework", "{6429D03F-70F5-43BD-838B-77FB7F0F88DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Caching", "Falcon.Caching\Falcon.Caching.csproj", "{41BAD96D-9861-4951-A52E-28DBC9EB3E8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{2BA9C1B4-216F-4A4F-AD7E-0C32F704F4C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Admin.CoreModules", "Falcon.Web\Admin\CoreModules\Falcon.Admin.CoreModules.csproj", "{B2CD4CB2-AE0A-4B56-944F-5E4DA02DA20C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Admin.Modules.Contents", "Falcon.Web\Admin\Contents\Falcon.Admin.Modules.Contents.csproj", "{0A7BFE80-EBEC-480C-917B-7D2E6977AB05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falcon.Modules.Contents", "Falcon.Web\Modules\Contents\Falcon.Modules.Contents.csproj", "{F0A7C6C6-F951-495E-8B31-F15F818E9518}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "http://theme.bizweb.dev", "http://theme.bizweb.dev", "{A4132021-2785-4DE7-9ACA-16A036832331}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{0AB94496-B90F-4C22-A152-3F2C30164AB3}|Falcon.Data.dll;{41BAD96D-9861-4951-A52E-28DBC9EB3E8B}|Falcon.Caching.dll;{25710D91-2715-4C6A-9BB4-0CE7A27BF29C}|Falcon.Common.dll;{DCCD1B8E-EE43-473D-A952-0F18CAAFF942}|Falcon.Services.Core.dll;{F46BF8D9-46B0-44B9-B78E-05309A9C35BF}|Falcon.Services.dll;{B2CD4CB2-AE0A-4B56-944F-5E4DA02DA20C}|Falcon.Admin.CoreModules.dll;{0A7BFE80-EBEC-480C-917B-7D2E6977AB05}|Falcon.Admin.Modules.Contents.dll;{2D700ED9-9249-4697-BA2B-86538D7B37E7}|Falcon.Libraries.Models.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/theme.bizweb.dev"
+		Debug.AspNetCompiler.PhysicalPath = "Falcon.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\theme.bizweb.dev\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/theme.bizweb.dev"
+		Release.AspNetCompiler.PhysicalPath = "Falcon.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\theme.bizweb.dev\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Falcon.Web\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25710D91-2715-4C6A-9BB4-0CE7A27BF29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25710D91-2715-4C6A-9BB4-0CE7A27BF29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB94496-B90F-4C22-A152-3F2C30164AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB94496-B90F-4C22-A152-3F2C30164AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D700ED9-9249-4697-BA2B-86538D7B37E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D700ED9-9249-4697-BA2B-86538D7B37E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46BF8D9-46B0-44B9-B78E-05309A9C35BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46BF8D9-46B0-44B9-B78E-05309A9C35BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCD1B8E-EE43-473D-A952-0F18CAAFF942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCD1B8E-EE43-473D-A952-0F18CAAFF942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F940C17E-6D44-4492-B463-BDA93409143C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F940C17E-6D44-4492-B463-BDA93409143C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67B7DD1-59D8-48D3-9F31-D1227F375B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67B7DD1-59D8-48D3-9F31-D1227F375B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A28B0B-5ABC-4124-BDD9-0EA2B0A2692F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A28B0B-5ABC-4124-BDD9-0EA2B0A2692F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BAD96D-9861-4951-A52E-28DBC9EB3E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BAD96D-9861-4951-A52E-28DBC9EB3E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BAD96D-9861-4951-A52E-28DBC9EB3E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CD4CB2-AE0A-4B56-944F-5E4DA02DA20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CD4CB2-AE0A-4B56-944F-5E4DA02DA20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CD4CB2-AE0A-4B56-944F-5E4DA02DA20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7BFE80-EBEC-480C-917B-7D2E6977AB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7BFE80-EBEC-480C-917B-7D2E6977AB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7BFE80-EBEC-480C-917B-7D2E6977AB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A7C6C6-F951-495E-8B31-F15F818E9518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A7C6C6-F951-495E-8B31-F15F818E9518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A7C6C6-F951-495E-8B31-F15F818E9518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4132021-2785-4DE7-9ACA-16A036832331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4132021-2785-4DE7-9ACA-16A036832331}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4132021-2785-4DE7-9ACA-16A036832331}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D700ED9-9249-4697-BA2B-86538D7B37E7} = {9518D177-E611-49AF-89CC-96C50DA3E5D1}
+		{A67B7DD1-59D8-48D3-9F31-D1227F375B86} = {966AB486-8B26-4612-A03F-76CACE6B999B}
+		{F0A7C6C6-F951-495E-8B31-F15F818E9518} = {966AB486-8B26-4612-A03F-76CACE6B999B}
+		{41BAD96D-9861-4951-A52E-28DBC9EB3E8B} = {6429D03F-70F5-43BD-838B-77FB7F0F88DC}
+		{B2CD4CB2-AE0A-4B56-944F-5E4DA02DA20C} = {2BA9C1B4-216F-4A4F-AD7E-0C32F704F4C9}
+		{0A7BFE80-EBEC-480C-917B-7D2E6977AB05} = {2BA9C1B4-216F-4A4F-AD7E-0C32F704F4C9}
+	EndGlobalSection
+EndGlobal

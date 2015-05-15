@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ThemeStore>
+
+    @using (Html.BeginForm())
+    {
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.Partial("_Toolbar")
+            </div>
+            <div class="panel-body">
+                <table id="exampleData" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Tên</th>
+                            <th>Mô tả</th>
+                            <th style="width: 135px">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>@Html.Raw(item.Description)</td>
+                                <td>
+                                    @*<div class="text-center">
+                                            <a class="btn btn-default btn-xs" href="@Url.Action("Edit", new { Id = item.Id })" title="Sửa"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                                            <a class="btn btn-danger btn-xs" href="@Url.Action("Delete", new { Id = item.Id })" title="Xóa"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;
+                                        </div>*@
+                                    <div class="text-center">
+                                        <a href="@Url.Action("Edit", new { Id = item.Id })" data-modal="" class="btn btn-default btn-xs" title="Sửa"><span class='glyphicon glyphicon-pencil'></span></a>&nbsp;
+                                        <a href="@Url.Action("ThemeCollection", new { Id = item.Id })" data-modal="" class="btn btn-danger btn-xs" title="Phân nhóm"><span class='glyphicon glyphicon-cog'></span></a>&nbsp;
+                                        <a href="@Url.Action("Delete", new { Id = item.Id })" data-modal="" class="btn btn-danger btn-xs" title="Xóa"><span class='glyphicon glyphicon-trash'></span></a>&nbsp;
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    
+                      <script src="~/Scripts/modalform.js"></script>
+                      <script src="~/Scripts/admin/loadDataTable.js"></script>

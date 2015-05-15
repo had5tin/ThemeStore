@@ -1,0 +1,194 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @SetMeta(new Falcon.UI.Resources.MetaEntry { HttpEquiv = "Content-Type", Content = "text/html; charset=utf-8" })
+    @SetMeta("description", ViewBag.MetaDescription)
+    @SetMeta("keyword", ViewBag.MetaKeyword)
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @Css("veneto-admin.min.css?v=1.0", new { media = "all" })
+    @Css("demo.css?v=1.0", new { media = "all" })
+    @Css("font-awesome/css/font-awesome.css?v=1.0", new { media = "all" })
+
+
+
+    <!--[if lt IE 8]>
+    @Css("iestyles.css?v=1.0", new { media = "all" })
+    <![endif]-->
+    <!--[if lt IE 7]>
+    @Css("below_ie7.css?v=1.0", new { media = "all" })
+    <![endif]-->
+    <!--[if IE 7]>
+    @Css("ie7.css?v=1.0", new { media = "all" })
+    <![endif]-->
+    @*<link href="/Themes/Portal/Shared/Styles/ui-lightness/jquery-ui-1.8.16.custom.css?v=1.0" media="all" rel="stylesheet" type="text/css" />
+        @(Html.Telerik().StyleSheetRegistrar()
+                        .DefaultGroup(group => group
+                                                .DefaultPath("~/Content/telerik/")
+                                                .Add("telerik.common.css")
+                                                .Add("telerik.vista.min.css")
+                                                .Combined(true)
+                                                .Compress(true)
+                        ))*@
+
+    @Js("jquery-2.1.3.min.js?v=1.0")
+    @Js("jquery.validate.min.js?v=1.0")
+    @Js("jquery.validate.unobtrusive.min.js?v=1.0")
+    @Js("jquery-ui-1.11.2.min.js?v=1.0")
+    @Js("bootstrap.min.js?v=1.0")
+
+    @Js("admin/jquery.navgoco.js?v=1.0")
+    @Js("admin/main.js?v=1.0")
+    @Js("admin/jquery.sparkline.js?v=1.0")
+    @Js("admin/demo.js?v=1.0")
+    @Js("admin/loadDataTable.js?v=1.0")
+    @Js("admin/loadTabs.js?v=1.0")
+
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.js"></script>
+    
+    <link href="~/Content/bootstrap-select.min.css" rel="stylesheet" />
+    @Js("bootstrap-select.min.js?v=1.0")
+    @Js("loadBootstrapSelect.js?v=1.0")
+
+    @*<script src="~/Scripts/modalform.js"></script>*@
+
+    @*@Js("admin/admin.js?v=1.0")
+        @Js("admin/falcon.tabs.js?v=1.0")
+        @Js("tiny_mce/jquery.tinymce.js?v=1.0")
+        @Js("jstree/jquery.jstree.js?v=1.0")
+        @Js("swfobject.js?v=1.0")
+        @Js("jquery.uploadify.js?v=1.0")*@
+
+
+
+    @*@(Html.Telerik().ScriptRegistrar()
+        .DefaultGroup(group => group.DefaultPath("~/Scripts/telerik"))
+        .jQuery(false)
+        .jQueryValidation(false))*@
+    @StackExchange.Profiling.MiniProfiler.RenderIncludes()
+    <script type="text/javascript">
+        var BASE_URL = "@Falcon.Infrastructure.EngineContext.Current.FalconConfig.DomainName";
+        var MEDIA_URL = "@Falcon.Infrastructure.EngineContext.Current.FalconConfig.MediaDomainName";
+        var THEME_PATH = "@AbsoluteThemePath";
+    </script>
+
+
+    @*@RenderSection("scripts", required: false)*@
+
+</head>
+<body id="html-body">
+
+    <header>
+        <nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
+            <div class="navbar-brand-group">
+                <a class="navbar-sidebar-toggle navbar-link" data-sidebar-toggle=data-sidebar-toggle>
+                    <i class="fa fa-lg fa-fw fa-bars"></i>
+                </a>
+                <a class="navbar-brand hidden-xxs" href="index.html">
+                    <span class="sc-visible">
+                        DKT
+                    </span>
+                    <span class="sc-hidden">
+                        <span class="bold">DKT</span>
+                        ADMIN
+                    </span>
+                </a>
+            </div>
+            @Html.Partial(ThemeViewPath + "Include/Header.cshtml")
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <aside class="sidebar sidebar-default">
+            <div class="sidebar-profile">
+                <img class="img-circle profile-image" src="demo/images/profile.jpg" />
+                <div class="profile-body">
+                    <h4>Marlon Brice</h4>
+                    <div class="sidebar-user-links">
+                        <a class="btn btn-link btn-xs" href="pages-profile.html" data-placement="bottom" data-toggle="tooltip" data-original-title="Profile"><i class="fa fa-user"></i></a>
+                        <a class="btn btn-link btn-xs" href="javascript:;" data-placement="bottom" data-toggle="tooltip" data-original-title="Messages"><i class="fa fa-envelope"></i></a>
+                        <a class="btn btn-link btn-xs" href="javascript:;" data-placement="bottom" data-toggle="tooltip" data-original-title="Settings"><i class="fa fa-cog"></i></a>
+                        <a class="btn btn-link btn-xs" href="pages-sign-in.html" data-placement="bottom" data-toggle="tooltip" data-original-title="Logout"><i class="fa fa-sign-out"></i></a>
+                    </div>
+                </div>
+            </div>
+            @Html.Partial(ThemeViewPath + "Include/Menu.cshtml")
+        </aside>
+        <div class="page-content">
+            <div class="page-subheading page-subheading-md">
+                <ol class="breadcrumb">
+                    <li class="active">@ViewBag.Title</li>
+                </ol>
+            </div>
+            <div class="container-fluid-md">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="anchor-content" class="middle">
+                            <div id="page:main-container">
+                                <div id="messages">@Html.DisplayNotifications(TempData)</div>
+                                <div>
+                                    @RenderBody()
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <footer>
+                            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+                            <p class="text-center">
+                                @Html.Partial(ThemeViewPath + "Include/Footer.cshtml")
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<div class="wrapper">
+            <div class="header">
+                <div class="header-top">
+                    @Html.Partial(ThemeViewPath + "Include/Header.cshtml")
+                </div>
+                <div class="clear">
+                </div>
+                <div class="nav-bar">
+                    @Html.Partial(ThemeViewPath + "Include/Menu.cshtml")
+                </div>
+
+            </div>
+
+            <div class="footer">
+                @Html.Partial(ThemeViewPath + "Include/Footer.cshtml")
+            </div>
+        </div>*@
+
+
+    @*<div id="txt-url" class="hidden">@Html.Raw(Request.Url)</div>*@
+    
+    <div id='myModal' class='modal fade in'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id='myModalContent'></div>
+            </div>
+        </div>
+    </div>
+    <div id='myModalSuccess' class='modal fade in'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Thông báo</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Cập nhật dữ liệu thành công</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

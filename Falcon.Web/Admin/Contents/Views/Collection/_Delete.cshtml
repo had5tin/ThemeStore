@@ -1,0 +1,24 @@
+﻿@model Collection
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel">Xóa</h4>
+
+</div>
+@using (Html.BeginForm())
+{
+    <div class="modal-body">
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "")
+            <div class="form-group">
+                <p class="col-sm-offset-3">Bạn có muốn xóa @Model.Name không?</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" type="button" data-dismiss="modal">Cancel</button>
+        <input class="btn btn-danger" type="submit" value="Delete" />
+    </div>
+}

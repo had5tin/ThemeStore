@@ -1,0 +1,29 @@
+﻿<strong>@ViewData["ToolbarTitle"].ToString()</strong>
+@{
+    switch (ViewContext.RouteData.Values["action"].ToString().ToLower())
+    {
+        case "index":
+            @Html.Button("Thêm mới", ButtonActionType.Add, new { @class = "btn btn-primary btn-xs pull-right", onclick = "setLocation('" + Url.Action("Create") + "')", type = "button" });
+                                                                                                                                                                                      break;
+        case "edit":
+        case "editvalue":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("Index") + "')", type = "button" });
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+        @Html.Button("Lưu thiết lập", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+        @Html.Button("Xóa thiết lập", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa trang tĩnh này?');" });
+                                                                                                                                                  break;
+        case "create":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("Index") + "')", type = "button" });
+        @Html.Button("Reset", ButtonActionType.Reset, new { type = "reset" });
+        @Html.Button("Lưu thiết lập", ButtonActionType.Save);
+        @Html.Button("Lưu và tiếp tục sửa", ButtonActionType.SaveAndContinueEdit);
+                                                                                     break;
+        case "delete":
+        @Html.Button("Quay lại", ButtonActionType.Back, new { onclick = "setLocation('" + Url.Action("Index") + "')", type = "button" });
+        @Html.Button("Xóa thiết lập", ButtonActionType.Delete, new { onclick = "return confirm('Bạn có thực sự muốn xóa trang này?');" });
+                                                                                                                                             break;
+        default:
+                                                                                                                                             break;
+    }
+}

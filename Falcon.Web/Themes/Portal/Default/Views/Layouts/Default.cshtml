@@ -1,0 +1,27 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    @Html.Partial("/Themes/Portal/Shared/Views/Include/Meta.cshtml")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    @Html.Partial("/Themes/Portal/Shared/Views/Include/Menu.cshtml")
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ol class="breadcrumb">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="active">Kho giao diện</li>
+                </ol>
+                @Html.Partial("/Themes/Portal/Shared/Views/Include/Toolbar.cshtml")
+                <div class="clear"></div>
+                <div id="wrapper" class="default-wrapper">
+                    @RenderBody()
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("/Themes/Portal/Shared/Views/Include/Footer.cshtml")
+</body>
+</html>
