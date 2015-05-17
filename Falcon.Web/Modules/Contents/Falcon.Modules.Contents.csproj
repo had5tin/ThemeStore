@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentsAreaRegistration.cs" />
+    <Compile Include="Controllers\AppsController.cs" />
     <Compile Include="Controllers\PagesController.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -149,6 +150,7 @@
     <Content Include="Views\Themes\Details.cshtml" />
     <Content Include="Views\Themes\Search.cshtml" />
     <Content Include="Views\Themes\Query.cshtml" />
+    <Content Include="Views\Apps\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config">
@@ -181,6 +183,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\App\" />
     <Folder Include="Views\Include\" />
   </ItemGroup>
   <PropertyGroup>

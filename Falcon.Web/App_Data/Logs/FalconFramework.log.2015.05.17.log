@@ -1,0 +1,8 @@
+﻿2015-05-17 15:33:39,744 [1    ] INFO  Start Application
+ 2015-05-17 15:33:39,825 [1    ] INFO  License Info: Domain: .*(hangtot|bizweb|stormcart|van|thambay|dkt|sapo|bank).*; IP: ; Expiration date: 31/12/9999 11:59:59 CH
+ 2015-05-17 15:33:42,879 [1    ] INFO  Registra Falcon.Startup.DependencyRegistrar cost 00:00:00.0453200
+ 2015-05-17 15:33:42,961 [1    ] INFO  Start Task Falcon.Startup.AutoMapperStartupTask
+ 2015-05-17 15:33:43,578 [1    ] INFO  End Task Falcon.Startup.AutoMapperStartupTask cost 00:00:00.6167426
+ 2015-05-17 15:33:43,843 [1    ] INFO  Register Routes cost 00:00:00.0586004
+ 2015-05-17 15:33:43,939 [1    ] INFO  Start Application Completed, cost 00:00:04.1545316
+ 

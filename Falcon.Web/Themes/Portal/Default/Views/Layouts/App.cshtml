@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @Html.Partial("/Themes/Portal/App/Views/Include/_head.cshtml")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    @Html.Partial("/Themes/Portal/App/Views/Include/_menuheader.cshtml")
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                @Html.Partial("/Themes/Portal/App/Views/Include/_slide.cshtml")
+                @Html.Partial("/Themes/Portal/App/Views/Include/_menu.cshtml")
+                @Html.Partial("/Themes/Portal/App/Views/Include/_toolbar.cshtml")
+                <div class="clear"></div>
+                <div id="wrapper" class="default-wrapper">
+                    @RenderBody()
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("/Themes/Portal/Shared/Views/Include/Footer.cshtml")
+</body>
+</html>

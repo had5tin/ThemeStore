@@ -1219,6 +1219,7 @@
     <Content Include="Themes\Portal\Admin\Styles\reset.css" />
     <Content Include="Themes\Portal\Admin\Styles\veneto-admin.min.css" />
     <Content Include="Themes\Portal\Admin\Theme.png" />
+    <Content Include="Themes\Portal\App\Styles\Style.css" />
     <Content Include="Themes\Portal\Default\Images\skin\bt_zoom.png" />
     <Content Include="Themes\Portal\Default\Images\skin\phone.png" />
     <Content Include="Themes\Portal\Default\Images\skin\_skinitem_hover.png" />
@@ -1314,6 +1315,8 @@
     <Folder Include="App_Start\" />
     <Folder Include="Resources\" />
     <Folder Include="Themes\Portal\Admin\Scripts\" />
+    <Folder Include="Themes\Portal\App\Images\" />
+    <Folder Include="Themes\Portal\App\Scripts\" />
     <Folder Include="Thumbnail\ExtraLarge\" />
     <Folder Include="Thumbnail\Large\" />
     <Folder Include="Thumbnail\Medium\" />
@@ -1379,6 +1382,14 @@
     <Content Include="Themes\Portal\Default\Views\Include\_Modal.cshtml" />
     <Content Include="Themes\Portal\Default\Views\Include\_ListTheme.cshtml" />
     <Content Include="Views\Shared\_html5shiv.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Layouts\Default.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Include\_head.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Include\_footer.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Include\_slide.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Include\_menuheader.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Include\_toolbar.cshtml" />
+    <Content Include="Themes\Portal\App\Views\Include\_menu.cshtml" />
+    <Content Include="Themes\Portal\Default\Views\Layouts\App.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

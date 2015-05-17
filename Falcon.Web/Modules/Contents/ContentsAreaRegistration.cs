@@ -37,6 +37,11 @@ namespace Falcon.Modules.Contents
                 "ThemeStore/{action}/{id}",
                 new { controller = "Themes", action = "Query", id = UrlParameter.Optional }
             );
+            context.MapRoute(
+                "Apps_default",
+                "AppsStore/{action}/{id}",
+                new { controller = "Apps", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

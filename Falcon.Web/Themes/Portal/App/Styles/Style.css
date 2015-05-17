@@ -1,0 +1,247 @@
+﻿.menu-icons {
+    /*width: 100%;*/
+    /*background-color: #f3f3f3;*/
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+    /*padding: 30px 0;*/
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+    .menu-icons a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .menu-icons a:hover {
+            color: #18a4dd;
+            /*color: #fd6533;*/
+            text-decoration: none;
+        }
+
+.footer {
+    /*height: 170px;*/
+    width: 100%;
+    background-color: #31353e;
+    color: #cfcdce;
+    padding: 30px 0 0;
+}
+
+.share {
+    /*width: 210px;*/
+}
+
+.pages {
+}
+
+.fl {
+    /*float: left;*/
+}
+
+.share .facebook {
+    background: url("/Themes/Portal/Shared/Images/facebook.png") no-repeat;
+}
+
+
+
+.share .youtube {
+    background: url("/Themes/Portal/Shared/Images/youtube.png") no-repeat;
+}
+
+.share .google {
+    background: url("/Themes/Portal/Shared/Images/google.png") no-repeat;
+}
+
+.share .forum {
+    background: url("/Themes/Portal/Shared/Images/forum.png") no-repeat;
+}
+
+.share .blog {
+    background: url("/Themes/Portal/Shared/Images/blog.png") no-repeat;
+}
+
+
+
+.share .item {
+    height: 41px;
+    margin-bottom: 10px;
+}
+
+    .share .item a {
+        display: block;
+        padding: 10px 0 0 50px;
+    }
+
+.footer a {
+    color: #cfcdce;
+    text-decoration: none;
+}
+
+    .footer a:hover {
+        text-decoration: none;
+    }
+
+.footer h4 {
+    color: #2194d2;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.pages ul, .pages ul li, .cooperation ul, .cooperation ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.contact div {
+    margin-bottom: 3px;
+    padding: 5px 0;
+}
+
+.contact ul {
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+.contact li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 5px 10px;
+}
+
+.contact .sk {
+    color: #8dc641;
+}
+
+    .contact .sk span {
+        background: url("/Themes/Portal/Shared/Images/bg_icon_cup.png") no-repeat;
+        display: block;
+        margin-top: -5px;
+        padding: 0 0 0 40px;
+    }
+
+.copyright {
+    border-top: 1px solid #262a33;
+    font-size: 13px;
+    text-align: center;
+}
+
+    .copyright .content {
+        padding: 13px 0;
+    }
+
+    .copyright .dot {
+        background: url("/Themes/Portal/Shared/Images/bg_dot.png") no-repeat;
+    }
+/*.subscription {
+    padding-bottom: 20px;
+}*/
+.subscription h5 {
+    color: #2194d2;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    /*background: #C30;*/
+    text-align: center;
+    /*padding: 50px;*/
+    /*color: #fff;*/
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #a6a6a6;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 15px;
+    color: #808080;
+}
+
+.circle {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-icons a:hover .circle {
+    border: 2px solid #18a4dd;
+    color: #18a4dd;
+    /*border: 2px solid #fd6533;*/
+}
+
+.circle h3 {
+    margin: 0;
+}
+
+.cmn-t-underline {
+    position: relative;
+    /*color: #ff3296;*/
+    margin: 0 auto;
+    width: 120px;
+    height: 11px;
+}
+
+    .cmn-t-underline:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #18a4dd;
+        /*background-color: #fd6533;*/
+        content: "";
+        -webkit-transition: width 0.2s;
+        -moz-transition: width 0.2s;
+        -ms-transition: width 0.2s;
+        -o-transition: width 0.2s;
+        transition: width 0.2s;
+    }
+
+.menu-icons a:hover .cmn-t-underline:after {
+    width: 120px;
+}
+
+.menu_title {
+    padding-top: 13px;
+}
+
+.menu_item {
+    height: 140px;
+    padding-top: 15px;
+}
+
+.img-market {
+    background-image: url("/Themes/Portal/Shared/Images/market.png");
+}
+
+.img-bunker {
+    background-image: url("/Themes/Portal/Shared/Images/bunker.png");
+}
+
+.img-service {
+    background-image: url("/Themes/Portal/Shared/Images/service.png");
+}
+
+.menu-icons a:hover .img-market {
+    background-image: url("/Themes/Portal/Shared/Images/market_hover.png");
+}
+
+.menu-icons a:hover .img-bunker {
+    background-image: url("/Themes/Portal/Shared/Images/bunker_hover.png");
+}
+
+.menu-icons a:hover .img-service {
+    background-image: url("/Themes/Portal/Shared/Images/service_hover.png");
+}
+
+#toolbar {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
